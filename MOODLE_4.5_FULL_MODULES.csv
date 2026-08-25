@@ -1,0 +1,375 @@
+﻿Plugin Type,Plugin Name,PluginName EN,Description EN,Description FA,Path
+aiplacement,courseassist,Course Assistance Placement,Course assist AI placement - help build course content,دستیار دوره AI - کمک به ساخت محتوای دوره,ai/placement/courseassist
+aiplacement,editor,HTML Text Editor Placement,Editor AI placement - AI inside TinyMCE editor - NEW 4.5,HTML Text Editor Placement,ai/placement/editor
+aiprovider,azureai,Azure AI API Provider,Azure AI provider - Azure OpenAI,Azure AI API Provider,ai/provider/azureai
+aiprovider,openai,OpenAI API Provider,OpenAI provider - ChatGPT / DALL-E,ارائه‌دهنده OpenAI - ChatGPT,ai/provider/openai
+antivirus,clamav,ClamAV antivirus,ClamAV antivirus - scan uploaded files,ClamAV antivirus,lib/antivirus/clamav
+availability,completion,Restriction by activity completion,Restriction by activity completion,Restriction by activity completion,availability/condition/completion
+availability,date,Restriction by date,Restriction by date,Restriction by date,availability/condition/date
+availability,grade,Restriction by grades,Restriction by grade,Restriction by grades,availability/condition/grade
+availability,group,Restriction by group,Restriction by group,Restriction by group,availability/condition/group
+availability,grouping,Restriction by grouping,Restriction by grouping,Restriction by grouping,availability/condition/grouping
+availability,profile,Restriction by profile,Restriction by user profile,Restriction by profile,availability/condition/profile
+qtype,calculated,Calculated,Calculated - numeric with wildcards,Calculated,question/type/calculated
+qtype,calculatedmulti,Calculated multichoice,Calculated multichoice,Calculated multichoice,question/type/calculatedmulti
+qtype,calculatedsimple,Calculated simple,Calculated simple,Calculated simple,question/type/calculatedsimple
+qtype,ddimageortext,Drag and drop onto image,Drag and drop onto image or text,Drag and drop onto image,question/type/ddimageortext
+qtype,ddmarker,Drag and drop markers,Drag and drop markers onto image,Drag and drop markers,question/type/ddmarker
+qtype,ddwtos,Drag and drop into text,Drag and drop into text,Drag and drop into text,question/type/ddwtos
+qtype,description,Description,"Description - informational text, not a question",Description,question/type/description
+qtype,essay,Essay,Essay - free text with file upload,تشریحی - متن آزاد با آپلود فایل,question/type/essay
+qtype,gapselect,Select missing words,Select missing words - dropdown in text,Select missing words,question/type/gapselect
+qtype,match,Matching,Matching - match items,Matching,question/type/match
+qtype,missingtype,Missing question type placeholder,Missing question type placeholder,Missing question type placeholder,question/type/missingtype
+qtype,multianswer,Embedded answers (Cloze),Embedded answers (Cloze),Embedded answers (Cloze),question/type/multianswer
+qtype,multichoice,Multiple choice,Multiple choice - single/multiple answer,چندگزینه‌ای - تک یا چند پاسخ,question/type/multichoice
+qtype,numerical,Numerical,Numerical - number with tolerance,Numerical,question/type/numerical
+qtype,ordering,Ordering,Ordering - order items (words/images),Ordering,question/type/ordering
+qtype,random,Random,Random question from category,Random,question/type/random
+qtype,randomsamatch,Random short-answer matching,Random short-answer matching,Random short-answer matching,question/type/randomsamatch
+qtype,shortanswer,Short answer,Short answer - text matching,Short answer,question/type/shortanswer
+qtype,truefalse,True/False,True/False,درست/غلط,question/type/truefalse
+mod,assign,Assignment,"Assignment - students submit work, teachers grade with feedback, group support",تکلیف - ارسال کار توسط دانشجو، نمره‌دهی و بازخورد توسط استاد، پشتیبانی گروهی و تلاش مجدد، UI جدید ۴.۵,mod/assign
+mod,bigbluebuttonbn,BigBlueButton,BigBlueButton - integrated virtual classroom / video conferencing,بیگ‌بلوباتن - کلاس مجازی و کنفرانس ویدئویی یکپارچه,mod/bigbluebuttonbn
+mod,book,Book,Book - multi-page resource with chapters,کتاب - منبع چندصفحه‌ای با فصل‌بندی,mod/book
+mod,chat,Chat,Chat - real-time synchronous text discussion,چت - گفتگوی متنی همزمان,mod/chat
+mod,choice,Choice,Choice - single question poll / voting activity,انتخاب - نظرسنجی تک‌سوال چندگزینه‌ای,mod/choice
+mod,data,Database,Database auto-linking,پایگاه داده - فعالیت ساخت دیتابیس سفارشی با فیلدها,mod/data
+mod,feedback,Feedback,Feedback - custom non-graded surveys / questionnaires,بازخورد - نظرسنجی سفارشی بدون نمره,mod/feedback
+mod,folder,Folder,Folder - display a collection of files in a directory,پوشه - نمایش مجموعه فایل‌ها,mod/folder
+mod,forum,Forum,"Forum - asynchronous discussion with multiple types (general, Q&A, single)",انجمن - بحث ناهمزمان با انواع مختلف,mod/forum
+mod,glossary,Glossary,Glossary auto-linking,واژه‌نامه - اصطلاحات مشارکتی با لینک خودکار,mod/glossary
+mod,h5pactivity,H5P,H5P Activity - interactive H5P content with grading,فعالیت H5P - محتوای تعاملی H5P با نمره‌دهی,mod/h5pactivity
+mod,imscp,IMS content package,IMS Content Package - display IMS CP package,IMS content package,mod/imscp
+mod,label,Text and media area,Label - text/media spacer between activities,برچسب - متن/رسانه جداکننده,mod/label
+mod,lesson,Lesson,Lesson - branching learning path with questions,درس - مسیر یادگیری شاخه‌ای با سوال,mod/lesson
+mod,lti,External tool,LTI enrolment - published as LTI tool,ابزار خارجی LTI 1.3 - اتصال به ابزارهای خارجی,mod/lti
+mod,page,Page,Page - single web page content resource,صفحه - یک صفحه محتوایی,mod/page
+mod,quiz,Quiz,"Quiz - question bank, attempts, feedback, Safe Exam Browser, selective regrade in 4.5",آزمون - بانک سوال، انواع سوال، نمره‌دهی مجدد انتخابی در ۴.۵,mod/quiz
+mod,resource,File,File - single file resource,فایل - نمایش یک فایل تکی,mod/resource
+mod,scorm,SCORM package,SCORM - SCORM 1.2/2004 package with tracking,اسکورم - بسته SCORM با ردیابی,mod/scorm
+mod,subsection,Subsection,Subsection - NEW 4.5 - nested sections for course hierarchy,زیربخش - جدید ۴.۵ - بخش‌های تودرتو برای سلسله‌مراتب دوره,mod/subsection
+mod,survey,Survey,Survey - standard COLLES/ATTLS surveys,Survey,mod/survey
+mod,url,URL,URL downloader - download from URL,پیوند - لینک به صفحه خارجی,mod/url
+mod,wiki,Wiki,Wiki - collaborative wiki pages,ویکی - صفحات مشارکتی,mod/wiki
+mod,workshop,Workshop,Workshop - peer assessment with criteria,کارگاه - ارزیابی همتایان,mod/workshop
+auth,cas,CAS server (SSO),CAS authentication - Central Authentication Service,CAS server (SSO),auth/cas
+auth,email,Email-based self-registration,Email message output,ثبت‌نام با ایمیل / خروجی ایمیل,auth/email
+auth,ldap,LDAP server,LDAP authentication,LDAP server,auth/ldap
+auth,lti,LTI,LTI enrolment - published as LTI tool,ابزار خارجی LTI 1.3 - اتصال به ابزارهای خارجی,auth/lti
+auth,manual,Manual accounts,Manual accounts - created by admin,Manual accounts,auth/manual
+auth,mnet,MNet authentication,MNet remote enrolment,MNet authentication,auth/mnet
+auth,nologin,No login,No login - prevents login,No login,auth/nologin
+auth,none,No authentication,No authentication,No authentication,auth/none
+auth,oauth2,OAuth 2,OAuth2 issuer management,OAuth2 - احراز هویت با گوگل، مایکروسافت,auth/oauth2
+auth,shibboleth,Shibboleth,Shibboleth authentication,Shibboleth,auth/shibboleth
+auth,webservice,Web services authentication,Web service authentication,Web services authentication,auth/webservice
+calendartype,gregorian,Gregorian calendar type,Gregorian calendar type,Gregorian calendar type,calendar/type/gregorian
+communication,customlink,Custom link,Custom link,Custom link,communication/provider/customlink
+communication,matrix,Matrix,Matrix communication provider - Matrix chat rooms,Matrix,communication/provider/matrix
+customfield,checkbox,Checkbox,Checkbox custom field / profile field,Checkbox,customfield/field/checkbox
+customfield,date,Date and time,Restriction by date,Date and time,customfield/field/date
+customfield,number,Number,Number,Number,customfield/field/number
+customfield,select,Dropdown menu,Dropdown menu,Dropdown menu,customfield/field/select
+customfield,text,Short text,Short text,Short text,customfield/field/text
+customfield,textarea,Text area,Text area,Text area,customfield/field/textarea
+enrol,category,Category enrolments,Category enrolment - sync from category,Category enrolments,enrol/category
+enrol,cohort,Cohort sync,Cohort sync - enrol cohort members,Cohort sync,enrol/cohort
+enrol,database,External database,External database enrolment,External database,enrol/database
+enrol,fee,Enrolment on payment,Fee enrolment - paid via enrolment,Enrolment on payment,enrol/fee
+enrol,flatfile,Flat file (CSV),Flat file enrolment - CSV file,Flat file (CSV),enrol/flatfile
+enrol,guest,Guest access,Guest access - temporary access,Guest access,enrol/guest
+enrol,imsenterprise,IMS Enterprise file,IMS Enterprise enrolment,IMS Enterprise file,enrol/imsenterprise
+enrol,ldap,LDAP enrolments,LDAP authentication,LDAP enrolments,enrol/ldap
+enrol,lti,Publish as LTI tool,LTI enrolment - published as LTI tool,ابزار خارجی LTI 1.3 - اتصال به ابزارهای خارجی,enrol/lti
+enrol,manual,Manual enrolments,Manual accounts - created by admin,Manual enrolments,enrol/manual
+enrol,meta,Course meta link,Course meta link - enrol from another course,Course meta link,enrol/meta
+enrol,mnet,MNet remote enrolments,MNet remote enrolment,MNet remote enrolments,enrol/mnet
+enrol,paypal,PayPal,PayPal payment gateway,درگاه پرداخت PayPal,enrol/paypal
+enrol,self,Self enrolment,Self enrolment - students enrol themselves,ثبت‌نام خودکار - دانشجو خودش ثبت‌نام می‌کند,enrol/self
+message,airnotifier,Mobile,Mobile,Mobile,message/output/airnotifier
+message,email,Email,Email message output,ثبت‌نام با ایمیل / خروجی ایمیل,message/output/email
+message,popup,Web,Popup notification,Web,message/output/popup
+block,accessreview,Accessibility review,Accessibility review block - checks course accessibility,Accessibility review,blocks/accessreview
+block,activity_modules,Activities,Activities block - lists all activity types in course,Activities,blocks/activity_modules
+block,activity_results,Activity results,Activity results - shows results of an activity,Activity results,blocks/activity_results
+block,admin_bookmarks,Admin bookmarks,Admin bookmarks - quick admin links,Admin bookmarks,blocks/admin_bookmarks
+block,badges,Latest badges,Badges block - displays earned badges,Latest badges,blocks/badges
+block,blog_menu,Blog menu,Blog menu - blog navigation,Blog menu,blocks/blog_menu
+block,blog_recent,Recent blog entries,Recent blog entries,Recent blog entries,blocks/blog_recent
+block,blog_tags,Blog tags,Blog tags,Blog tags,blocks/blog_tags
+block,calendar_month,Calendar,Calendar month view,Calendar,blocks/calendar_month
+block,calendar_upcoming,Upcoming events,Upcoming events,Upcoming events,blocks/calendar_upcoming
+block,comments,Comments,Comments block - site/course comments,Comments,blocks/comments
+block,completionstatus,Course completion status,Completion status - shows course completion progress,Course completion status,blocks/completionstatus
+block,course_list,Courses,Course list - lists courses,Courses,blocks/course_list
+block,course_summary,Course/site summary,Course summary - displays course summary,Course/site summary,blocks/course_summary
+block,feedback,Feedback,Feedback - custom non-graded surveys / questionnaires,بازخورد - نظرسنجی سفارشی بدون نمره,blocks/feedback
+block,globalsearch,Global search,Global search - site-wide search,Global search,blocks/globalsearch
+block,glossary_random,Random glossary entry,Random glossary entry,Random glossary entry,blocks/glossary_random
+block,html,Text,HTML block - custom HTML content,Text,blocks/html
+block,login,Login,Login block,Login,blocks/login
+block,lp,Learning plans,Learning plans - competency plans management,Learning plans,blocks/lp
+block,mentees,Mentees,Mentees - shows mentees for mentors,Mentees,blocks/mentees
+block,mnet_hosts,Network servers,MNet hosts - remote hosts,Network servers,blocks/mnet_hosts
+block,myoverview,Course overview,Course overview - dashboard my courses with timeline,نمای کلی دوره‌های من - داشبورد با تایم‌لاین,blocks/myoverview
+block,myprofile,Logged in user,Logged in user profile,Logged in user,blocks/myprofile
+block,navigation,Navigation,Navigation block - site navigation tree,Navigation,blocks/navigation
+block,news_items,Latest announcements,Latest announcements,Latest announcements,blocks/news_items
+block,online_users,Online users,Online users - shows online users,Online users,blocks/online_users
+block,private_files,Private files,Private files - user private file area,Private files,blocks/private_files
+block,recent_activity,Recent activity,Recent activity - recent course activity,Recent activity,blocks/recent_activity
+block,recentlyaccessedcourses,Recently accessed courses,Recently accessed courses,Recently accessed courses,blocks/recentlyaccessedcourses
+block,recentlyaccesseditems,Recently accessed items,Recently accessed items,Recently accessed items,blocks/recentlyaccesseditems
+block,rss_client,RSS feeds,RSS client - displays external RSS feeds,RSS feeds,blocks/rss_client
+block,search_forums,Search forums,Search forums - forum search box,Search forums,blocks/search_forums
+block,section_links,Section links,Section links - quick jump to sections,Section links,blocks/section_links
+block,selfcompletion,Self completion,Self completion - self completion button,Self completion,blocks/selfcompletion
+block,settings,Administration,Settings / Administration block,Administration,blocks/settings
+block,site_main_menu,Main menu,Site main menu - main menu links,Main menu,blocks/site_main_menu
+block,social_activities,Social activities,Social activities - for social format,Social activities,blocks/social_activities
+block,starredcourses,Starred courses,Starred courses,Starred courses,blocks/starredcourses
+block,tag_flickr,Flickr,Flickr tag block,Flickr,blocks/tag_flickr
+block,tag_youtube,YouTube,YouTube tag block,YouTube,blocks/tag_youtube
+block,tags,Tags,Tags block,Tags,blocks/tags
+block,timeline,Timeline,Timeline - upcoming deadlines across courses,تایم‌لاین - مهلت‌های آینده,blocks/timeline
+media,html5audio,HTML5 audio,HTML5 audio,HTML5 audio,media/player/html5audio
+media,html5video,HTML5 video,HTML5 video player,HTML5 video,media/player/html5video
+media,videojs,VideoJS player,VideoJS player - advanced video player,VideoJS player,media/player/videojs
+media,vimeo,Vimeo,Vimeo,Vimeo,media/player/vimeo
+media,youtube,YouTube,YouTube player,YouTube,media/player/youtube
+filter,activitynames,,Activity names - auto-link activity names,پلاگین activitynames,filter/activitynames
+filter,algebra,,Algebra - algebraic notation via images,پلاگین algebra,filter/algebra
+filter,codehighlighter,,Code highlighter - syntax highlighting,پلاگین codehighlighter,filter/codehighlighter
+filter,data,,Database auto-linking,پایگاه داده - فعالیت ساخت دیتابیس سفارشی با فیلدها,filter/data
+filter,displayh5p,,Display H5P - render H5P filter,پلاگین displayh5p,filter/displayh5p
+filter,emailprotect,,Email protection - obfuscate emails,پلاگین emailprotect,filter/emailprotect
+filter,emoticon,,Emoticon - text to image emoticons,پلاگین emoticon,filter/emoticon
+filter,glossary,,Glossary auto-linking,واژه‌نامه - اصطلاحات مشارکتی با لینک خودکار,filter/glossary
+filter,mathjaxloader,,MathJax - render TeX math via MathJax,پلاگین mathjaxloader,filter/mathjaxloader
+filter,mediaplugin,,Media plugins - embed audio/video,پلاگین mediaplugin,filter/mediaplugin
+filter,multilang,,Multi-language content filter,پلاگین multilang,filter/multilang
+filter,tex,,TeX notation - render math as images,پلاگین tex,filter/tex
+filter,urltolink,,Convert URLs to links,پلاگین urltolink,filter/urltolink
+editor,atto,Atto HTML editor,Atto HTML editor - toolbar editor with 32 plugins,Atto HTML editor,lib/editor/atto
+editor,textarea,Plain text area,Plain text area,Plain text area,lib/editor/textarea
+editor,tiny,TinyMCE editor,"TinyMCE editor - modern editor with 11 plugins, screen recording in 4.5",TinyMCE editor,lib/editor/tiny
+format,singleactivity,Single activity,Single activity format - only one activity,Single activity,course/format/singleactivity
+format,social,Social,Social format - forum-focused,Social,course/format/social
+format,topics,Custom sections,Topics format - sections as topics,فرمت موضوعی - بخش‌ها به صورت موضوع,course/format/topics
+format,weeks,Weekly sections,Weekly format - sections as weeks,فرمت هفتگی - بخش‌ها به صورت هفته,course/format/weeks
+dataformat,csv,,CSV dataformat writer,پلاگین csv,dataformat/csv
+dataformat,excel,,excel dataformat plugin,پلاگین excel,dataformat/excel
+dataformat,html,,HTML block - custom HTML content,پلاگین html,dataformat/html
+dataformat,json,,json dataformat plugin,پلاگین json,dataformat/json
+dataformat,ods,,ODS export - OpenDocument spreadsheet,پلاگین ods,dataformat/ods
+dataformat,pdf,,PDF dataformat,پلاگین pdf,dataformat/pdf
+profilefield,checkbox,Checkbox,Checkbox custom field / profile field,Checkbox,user/profile/field/checkbox
+profilefield,datetime,Date/Time,Date/Time,Date/Time,user/profile/field/datetime
+profilefield,menu,Drop-down menu,Drop-down menu,Drop-down menu,user/profile/field/menu
+profilefield,social,Social,Social format - forum-focused,Social,user/profile/field/social
+profilefield,text,Text input,Text input,Text input,user/profile/field/text
+profilefield,textarea,Text area,Text area,Text area,user/profile/field/textarea
+report,backups,Backups report,Backups report - backup status,Backups report,report/backups
+report,competency,Competency breakdown,Competency breakdown,Competency breakdown,report/competency
+report,completion,Course completion,Restriction by activity completion,Course completion,report/completion
+report,configlog,Config changes,Config changes log,Config changes,report/configlog
+report,courseoverview,Course overview,Course overview,Course overview,report/courseoverview
+report,eventlist,Events list,Events list,Events list,report/eventlist
+report,infectedfiles,Infected files,Infected files,Infected files,report/infectedfiles
+report,insights,Insights,Insights,Insights,report/insights
+report,log,Logs,Log store manager,Logs,report/log
+report,loglive,Live logs,Live logs - real-time,Live logs,report/loglive
+report,outline,Activity report,Activity report,Activity report,report/outline
+report,participation,Course participation,Course participation report,Course participation,report/participation
+report,performance,Performance overview,Performance overview,Performance overview,report/performance
+report,progress,Activity completion,Activity completion progress,Activity completion,report/progress
+report,questioninstances,Question instances,Question instances,Question instances,report/questioninstances
+report,security,Security checks,Security overview report,Security checks,report/security
+report,stats,Statistics,Statistics report,Statistics,report/stats
+report,status,System status,System status / environment check,System status,report/status
+report,themeusage,Theme usage,Theme usage,Theme usage,report/themeusage
+report,usersessions,User sessions report,User sessions report,User sessions report,report/usersessions
+gradeexport,ods,OpenDocument spreadsheet,ODS export - OpenDocument spreadsheet,OpenDocument spreadsheet,grade/export/ods
+gradeexport,txt,Plain text file,Plain text file,Plain text file,grade/export/txt
+gradeexport,xls,Excel spreadsheet,Excel export,Excel spreadsheet,grade/export/xls
+gradeexport,xml,XML file,Moodle XML - native import/export,XML file,grade/export/xml
+gradeimport,csv,CSV file,CSV dataformat writer,CSV file,grade/import/csv
+gradeimport,direct,Paste from spreadsheet,Paste from spreadsheet,Paste from spreadsheet,grade/import/direct
+gradeimport,xml,XML file,Moodle XML - native import/export,XML file,grade/import/xml
+gradereport,grader,Grader report,Grader report - main gradebook with editing,گزارش نمره‌ده - دفتر نمره اصلی با ویرایش,grade/report/grader
+gradereport,history,Grade history,Grade history - audit log,Grade history,grade/report/history
+gradereport,outcomes,Outcomes report,Outcomes report,Outcomes report,grade/report/outcomes
+gradereport,overview,Overview report,Overview report - user overview across courses,Overview report,grade/report/overview
+gradereport,singleview,Single view,Single view,Single view,grade/report/singleview
+gradereport,summary,Grade summary,Grade summary,Grade summary,grade/report/summary
+gradereport,user,User report,User report - individual user grades,User report,grade/report/user
+gradingform,guide,Marking guide,Marking guide - grading form with criteria,Marking guide,grade/grading/form/guide
+gradingform,rubric,Rubric,Rubric - grading form with levels,روبریک - فرم نمره‌دهی با سطوح,grade/grading/form/rubric
+mlbackend,php,PHP machine learning backend,PHP ML backend - built-in ML,PHP machine learning backend,lib/mlbackend/php
+mlbackend,python,Python machine learning backend,Python ML backend - external Python,Python machine learning backend,lib/mlbackend/python
+mnetservice,enrol,Remote enrolment service,Remote enrolment service,Remote enrolment service,mnet/service/enrol
+webservice,rest,REST protocol,REST web service protocol,REST protocol,webservice/rest
+webservice,soap,SOAP protocol,SOAP web service protocol,SOAP protocol,webservice/soap
+repository,areafiles,Embedded files,Server files - files in course areas,Embedded files,repository/areafiles
+repository,contentbank,Content bank,Content bank,Content bank,repository/contentbank
+repository,coursefiles,Legacy course files,Legacy course files,Legacy course files,repository/coursefiles
+repository,dropbox,Dropbox,Dropbox repository,Dropbox,repository/dropbox
+repository,equella,EQUELLA repository,EQUELLA repository,EQUELLA repository,repository/equella
+repository,filesystem,File system,File system repository,File system,repository/filesystem
+repository,flickr,Flickr,Flickr repository,Flickr,repository/flickr
+repository,flickr_public,Flickr public,Flickr public,Flickr public,repository/flickr_public
+repository,googledocs,Google Drive,Google Docs repository,Google Drive,repository/googledocs
+repository,local,Server files,Server files,Server files,repository/local
+repository,merlot,Merlot.org,Merlot.org,Merlot.org,repository/merlot
+repository,nextcloud,Nextcloud,Nextcloud,Nextcloud,repository/nextcloud
+repository,onedrive,Microsoft OneDrive,Microsoft OneDrive,Microsoft OneDrive,repository/onedrive
+repository,recent,Recent files,Recent files,Recent files,repository/recent
+repository,s3,Amazon S3,Amazon S3 repository,Amazon S3,repository/s3
+repository,upload,Upload a file,Upload a file,Upload a file,repository/upload
+repository,url,URL downloader,URL downloader - download from URL,پیوند - لینک به صفحه خارجی,repository/url
+repository,user,Private files,User report - individual user grades,Private files,repository/user
+repository,webdav,WebDAV repository,WebDAV repository,WebDAV repository,repository/webdav
+repository,wikimedia,Wikimedia,Wikimedia,Wikimedia,repository/wikimedia
+repository,youtube,YouTube videos,YouTube player,YouTube videos,repository/youtube
+portfolio,download,File download,Download portfolio - zip download,File download,portfolio/download
+portfolio,flickr,Flickr.com,Flickr repository,Flickr.com,portfolio/flickr
+portfolio,googledocs,Google Drive,Google Docs repository,Google Drive,portfolio/googledocs
+portfolio,mahara,Mahara ePortfolio,Mahara ePortfolio export,Mahara ePortfolio,portfolio/mahara
+search,simpledb,Simple search,Simple DB search engine - database search,Simple search,search/engine/simpledb
+search,solr,Solr,Solr search engine - enterprise search,Solr,search/engine/solr
+qbank,bulkmove,Bulk move questions,Bulk move questions,Bulk move questions,question/bank/bulkmove
+qbank,columnsortorder,Column sort order,Column sort order,Column sort order,question/bank/columnsortorder
+qbank,comment,Question comments,Question comments,Question comments,question/bank/comment
+qbank,customfields,Question custom fields,Custom fields for questions,Question custom fields,question/bank/customfields
+qbank,deletequestion,Delete question,Delete questions,Delete question,question/bank/deletequestion
+qbank,editquestion,Edit questions,Edit questions,Edit questions,question/bank/editquestion
+qbank,exportquestions,Export questions,Export questions,Export questions,question/bank/exportquestions
+qbank,exporttoxml,Export to XML,Export to XML,Export to XML,question/bank/exporttoxml
+qbank,history,Question history,Grade history - audit log,Question history,question/bank/history
+qbank,importquestions,Import questions,Import questions,Import questions,question/bank/importquestions
+qbank,managecategories,Manage categories,Manage question categories (drag-drop in 4.5),Manage categories,question/bank/managecategories
+qbank,previewquestion,Preview question,Preview questions,Preview question,question/bank/previewquestion
+qbank,statistics,Question statistics,Question statistics,Question statistics,question/bank/statistics
+qbank,tagquestion,Tag question,Tag questions,Tag question,question/bank/tagquestion
+qbank,usage,Question usage,Question usage / where used,Question usage,question/bank/usage
+qbank,viewcreator,View creator,View creator,View creator,question/bank/viewcreator
+qbank,viewquestionname,View question name,View question name,View question name,question/bank/viewquestionname
+qbank,viewquestiontext,View question text,View question text,View question text,question/bank/viewquestiontext
+qbank,viewquestiontype,View question type,View question type,View question type,question/bank/viewquestiontype
+qbehaviour,adaptive,Adaptive mode,Adaptive mode - multiple tries with penalty,Adaptive mode,question/behaviour/adaptive
+qbehaviour,adaptivenopenalty,Adaptive mode (no penalties),Adaptive mode no penalties,Adaptive mode (no penalties),question/behaviour/adaptivenopenalty
+qbehaviour,deferredcbm,Deferred feedback with CBM,Deferred feedback with CBM (certainty),Deferred feedback with CBM,question/behaviour/deferredcbm
+qbehaviour,deferredfeedback,Deferred feedback,Deferred feedback - feedback after attempt,Deferred feedback,question/behaviour/deferredfeedback
+qbehaviour,immediatecbm,Immediate feedback with CBM,Immediate feedback with CBM,Immediate feedback with CBM,question/behaviour/immediatecbm
+qbehaviour,immediatefeedback,Immediate feedback,Immediate feedback per question,Immediate feedback,question/behaviour/immediatefeedback
+qbehaviour,informationitem,Behaviour for information items,Information item - no grading,Behaviour for information items,question/behaviour/informationitem
+qbehaviour,interactive,Interactive with multiple tries,Interactive with multiple tries,Interactive with multiple tries,question/behaviour/interactive
+qbehaviour,interactivecountback,Interactive with multiple tries (credit for earlier tries),Interactive with multiple tries (credit for earlier tries),Interactive with multiple tries (credit for earlier tries),question/behaviour/interactivecountback
+qbehaviour,manualgraded,Manually graded,Manually graded,Manually graded,question/behaviour/manualgraded
+qbehaviour,missing,Missing behaviour,Missing behaviour,Missing behaviour,question/behaviour/missing
+qformat,aiken,Aiken format,Aiken format - simple MC import/export,Aiken format,question/format/aiken
+qformat,blackboard_six,Blackboard,Blackboard 6+ import,Blackboard,question/format/blackboard_six
+qformat,gift,GIFT format,GIFT format - most comprehensive import/export,GIFT format,question/format/gift
+qformat,missingword,Missing word format,Missing word format,Missing word format,question/format/missingword
+qformat,multianswer,Embedded answers (Cloze),Embedded answers (Cloze),Embedded answers (Cloze),question/format/multianswer
+qformat,xhtml,XHTML format,XHTML export,XHTML format,question/format/xhtml
+qformat,xml,Moodle XML format,Moodle XML - native import/export,Moodle XML format,question/format/xml
+tool,admin_presets,Site admin presets,Admin presets - save/load site settings presets,Site admin presets,admin/tool/admin_presets
+tool,analytics,Analytic models,Analytics models management,Analytic models,admin/tool/analytics
+tool,availabilityconditions,Availability condition management,Availability condition management,Availability condition management,admin/tool/availabilityconditions
+tool,behat,Acceptance testing,Acceptance testing,Acceptance testing,admin/tool/behat
+tool,brickfield,Accessibility toolkit,Brickfield accessibility toolkit,Accessibility toolkit,admin/tool/brickfield
+tool,capability,Capability overview,Capability overview report,Capability overview,admin/tool/capability
+tool,cohortroles,Cohort roles management,Cohort roles management,Cohort roles management,admin/tool/cohortroles
+tool,componentlibrary,UI Component library,UI Component library,UI Component library,admin/tool/componentlibrary
+tool,customlang,Language customisation,Custom language - override strings,Language customisation,admin/tool/customlang
+tool,dataprivacy,Data privacy,Data privacy - GDPR requests,Data privacy,admin/tool/dataprivacy
+tool,dbtransfer,Database transfer,Database transfer,Database transfer,admin/tool/dbtransfer
+tool,filetypes,File types,File types management,File types,admin/tool/filetypes
+tool,generator,Development data generator,Development data generator,Development data generator,admin/tool/generator
+tool,httpsreplace,HTTPS conversion tool,HTTPS conversion tool,HTTPS conversion tool,admin/tool/httpsreplace
+tool,installaddon,Plugin installer,Plugin installer,Plugin installer,admin/tool/installaddon
+tool,langimport,Language packs,Language packs,Language packs,admin/tool/langimport
+tool,licensemanager,Licence manager,Licence manager,Licence manager,admin/tool/licensemanager
+tool,log,Log store manager,Log store manager,Log store manager,admin/tool/log
+tool,lp,Learning plans,Learning plans - competency plans management,Learning plans,admin/tool/lp
+tool,lpimportcsv,Import competency framework,Import competency framework,Import competency framework,admin/tool/lpimportcsv
+tool,lpmigrate,Competencies migration tool,Competencies migration tool,Competencies migration tool,admin/tool/lpmigrate
+tool,messageinbound,Inbound message configuration,Inbound message configuration,Inbound message configuration,admin/tool/messageinbound
+tool,mfa,Multi-factor authentication,Multi-factor authentication management,Multi-factor authentication,admin/tool/mfa
+tool,mobile,Moodle app tools,Mobile app settings,Moodle app tools,admin/tool/mobile
+tool,monitor,Event monitor,Event monitoring rules,Event monitor,admin/tool/monitor
+tool,moodlenet,MoodleNet,MoodleNet,MoodleNet,admin/tool/moodlenet
+tool,multilangupgrade,Multilang upgrade,Multilang upgrade,Multilang upgrade,admin/tool/multilangupgrade
+tool,oauth2,OAuth 2 services,OAuth2 issuer management,OAuth2 - احراز هویت با گوگل، مایکروسافت,admin/tool/oauth2
+tool,phpunit,PHPUnit tests,PHPUnit tests,PHPUnit tests,admin/tool/phpunit
+tool,policy,Policies,Policies - site policies management,Policies,admin/tool/policy
+tool,profiling,Profiling runs,Profiling runs,Profiling runs,admin/tool/profiling
+tool,recyclebin,Recycle bin,Recycle bin - deleted courses/activities recovery,Recycle bin,admin/tool/recyclebin
+tool,replace,DB search and replace,DB search and replace,DB search and replace,admin/tool/replace
+tool,spamcleaner,Spam cleaner,Spam cleaner,Spam cleaner,admin/tool/spamcleaner
+tool,task,Scheduled task configuration,Scheduled tasks management,Scheduled task configuration,admin/tool/task
+tool,templatelibrary,Template library,Template library,Template library,admin/tool/templatelibrary
+tool,unsuproles,Unsupported role assignments,Unsupported role assignments,Unsupported role assignments,admin/tool/unsuproles
+tool,uploadcourse,Course upload,Upload courses - CSV bulk create,Course upload,admin/tool/uploadcourse
+tool,uploaduser,User upload,Upload users - CSV bulk create,User upload,admin/tool/uploaduser
+tool,usertours,User tours,User tours - guided tours,User tours,admin/tool/usertours
+tool,xmldb,XMLDB editor,XMLDB editor,XMLDB editor,admin/tool/xmldb
+cachestore,apcu,APC user cache (APCu),APC user cache (APCu),APC user cache (APCu),cache/stores/apcu
+cachestore,file,File cache,File cache store / lock,File cache,cache/stores/file
+cachestore,redis,Redis,Redis cache store,Redis,cache/stores/redis
+cachestore,session,Session cache,Session cache,Session cache,cache/stores/session
+cachestore,static,Static request cache,Static request cache,Static request cache,cache/stores/static
+cachelock,file,File locking,File cache store / lock,File locking,cache/locks/file
+fileconverter,googledrive,Google Drive,Google Drive,Google Drive,files/converter/googledrive
+fileconverter,unoconv,Unoconv,Unoconv file converter - document conversion via LibreOffice,Unoconv,files/converter/unoconv
+contenttype,h5p,H5P,H5P content bank type,H5P,contentbank/contenttype/h5p
+theme,boost,Boost,"Boost - default modern theme based on Bootstrap 4/5, FA6 in 4.5",بوست - پوسته پیش‌فرض مدرن با بوت‌استرپ و FA6,theme/boost
+theme,classic,Classic,Classic - legacy theme,Classic,theme/classic
+h5plib,v127,,v127 h5plib plugin,پلاگین v127,h5p/h5plib/v127
+paygw,paypal,PayPal,PayPal payment gateway,درگاه پرداخت PayPal,payment/gateway/paypal
+smsgateway,aws,AWS,AWS SNS SMS gateway - NEW 4.5,درگاه SMS آمازون - جدید ۴.۵,sms/gateway/aws
+atto,accessibilitychecker,,,,lib/editor/atto/plugins/accessibilitychecker
+atto,accessibilityhelper,,,,lib/editor/atto/plugins/accessibilityhelper
+atto,align,,,,lib/editor/atto/plugins/align
+atto,backcolor,,,,lib/editor/atto/plugins/backcolor
+atto,bold,,,,lib/editor/atto/plugins/bold
+atto,charmap,,,,lib/editor/atto/plugins/charmap
+atto,clear,,,,lib/editor/atto/plugins/clear
+atto,collapse,,,,lib/editor/atto/plugins/collapse
+atto,emojipicker,,,,lib/editor/atto/plugins/emojipicker
+atto,emoticon,,Emoticon - text to image emoticons,,lib/editor/atto/plugins/emoticon
+atto,equation,,,,lib/editor/atto/plugins/equation
+atto,fontcolor,,,,lib/editor/atto/plugins/fontcolor
+atto,h5p,,H5P content bank type,,lib/editor/atto/plugins/h5p
+atto,html,,HTML block - custom HTML content,,lib/editor/atto/plugins/html
+atto,image,,,,lib/editor/atto/plugins/image
+atto,indent,,,,lib/editor/atto/plugins/indent
+atto,italic,,,,lib/editor/atto/plugins/italic
+atto,link,,,,lib/editor/atto/plugins/link
+atto,managefiles,,,,lib/editor/atto/plugins/managefiles
+atto,media,,,,lib/editor/atto/plugins/media
+atto,noautolink,,,,lib/editor/atto/plugins/noautolink
+atto,orderedlist,,,,lib/editor/atto/plugins/orderedlist
+atto,recordrtc,,,,lib/editor/atto/plugins/recordrtc
+atto,rtl,,,,lib/editor/atto/plugins/rtl
+atto,strike,,,,lib/editor/atto/plugins/strike
+atto,subscript,,,,lib/editor/atto/plugins/subscript
+atto,superscript,,,,lib/editor/atto/plugins/superscript
+atto,table,,,,lib/editor/atto/plugins/table
+atto,title,,,,lib/editor/atto/plugins/title
+atto,underline,,,,lib/editor/atto/plugins/underline
+atto,undo,,,,lib/editor/atto/plugins/undo
+atto,unorderedlist,,,,lib/editor/atto/plugins/unorderedlist
+tiny,accessibilitychecker,,,,lib/editor/tiny/plugins/accessibilitychecker
+tiny,aiplacement,,,,lib/editor/tiny/plugins/aiplacement
+tiny,autosave,,,,lib/editor/tiny/plugins/autosave
+tiny,equation,,,,lib/editor/tiny/plugins/equation
+tiny,h5p,,H5P content bank type,,lib/editor/tiny/plugins/h5p
+tiny,html,,HTML block - custom HTML content,,lib/editor/tiny/plugins/html
+tiny,link,,,,lib/editor/tiny/plugins/link
+tiny,media,,,,lib/editor/tiny/plugins/media
+tiny,noautolink,,,,lib/editor/tiny/plugins/noautolink
+tiny,premium,,,,lib/editor/tiny/plugins/premium
+tiny,recordrtc,,,,lib/editor/tiny/plugins/recordrtc
