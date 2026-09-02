@@ -1,0 +1,10 @@
+{
+  "accentColor": "#1B2A4A",
+  "baseFontSize": 16,
+  "theme": "moonstone",
+  "cssTheme": "Default",
+  "interfaceFontFamily": "Vazirmatn",
+  "textFontFamily": "Vazirmatn",
+  "monospaceFontFamily": "Fira Code",
+  "enabledCssSnippets": ["magfa-rfp"]
+}

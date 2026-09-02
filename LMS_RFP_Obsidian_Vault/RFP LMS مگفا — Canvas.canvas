@@ -1,0 +1,199 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "text": "# 🗺️ RFP سامانه مدیریت یادگیری هوشمند مگفا\n## نسخه 3.0 — تیر ۱۴۰۵\n### www.magamooz.com",
+      "x": -400,
+      "y": -800,
+      "width": 800,
+      "height": 140,
+      "color": "1"
+    },
+    {
+      "id": "core",
+      "type": "text",
+      "text": "## 🧠 Core Engine\n### لایه هسته مشترک\n\n- مدیریت کاربران\n- موتور محتوا (SCORM/H5P)\n- سیستم ارزیابی\n- صدور گواهی\n- داشبورد تعاملی\n- Plugin Loader\n- Event Bus\n- Course Entity (Generic)\n- Identity & Access",
+      "x": -300,
+      "y": -500,
+      "width": 600,
+      "height": 280,
+      "color": "5"
+    },
+    {
+      "id": "ent-std",
+      "type": "text",
+      "text": "## 🏢 Enterprise Standard\n### نسخه استاندارد سازمانی\n\n- ساختار سازمانی (Hierarchy)\n- مسیرهای یادگیری + Skills\n- گزارش‌دهی BI/Analytics\n- یکپارچگی HRIS\n- ERP Connector\n- RBAC چندلایه + SSO/LDAP",
+      "x": -1100,
+      "y": -100,
+      "width": 500,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "aca-std",
+      "type": "text",
+      "text": "## 🎓 Academic Standard\n### نسخه استاندارد آکادمیک\n\n- ساختار ترمیک + بازه‌های زمانی\n- پیش‌نیاز / همنیاز (Rules Engine)\n- سیستم نمره‌دهی منعطف\n- یکپارچگی با SIS (گلستان/سجاد)\n- کارنامه درسی\n- Forum گفتگو",
+      "x": 600,
+      "y": -100,
+      "width": 500,
+      "height": 240,
+      "color": "4"
+    },
+    {
+      "id": "ent-smart-gamification",
+      "type": "text",
+      "text": "## 🎮 Gamification\n### بازیوارسازی — ۹ زیرماژول\n\n۱. موتور امتیازدهی (Point)\n۲. سیستم نشان (Badge)\n۳. سطح‌بندی (Level)\n۴. لیدربورد (Ranking)\n۵. قوانین پاداش\n۶. شخصی‌سازی\n۷. داشبورد مدیران\n۸. اعلان‌های هوشمند\n۹. ضدتقلب",
+      "x": -1500,
+      "y": 300,
+      "width": 480,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "ent-smart-ai",
+      "type": "text",
+      "text": "## 🤖 AI Engine\n### هوش مصنوعی — ۵ زیرماژول\n\n۱. موتور پیشنهاددهی (Recommender)\n۲. تحلیل شکاف مهارتی (Skill-Gap)\n۳. پشتیبانی هوشمند (RAG + LLM)\n۴. تشخیص تقلب (Proctoring)\n۵. داشبورد پیش‌بینی (Predictive)\n\n**الزام:** Microservices + API",
+      "x": -800,
+      "y": 300,
+      "width": 480,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "ent-smart-marketplace",
+      "type": "text",
+      "text": "## 🛒 Marketplace\n### پنل فروش مدرس\n\n- تعریف کمیسیون (۷۰/۳۰)\n- تسویه حساب\n- گزارش فروش\n- کوپن تخفیف\n- امتیازدهی و نظرات\n- سبد خرید\n- پرداخت آنلاین\n\n**+ Live Q&A و تیکتینگ**",
+      "x": -100,
+      "y": 300,
+      "width": 480,
+      "height": 320,
+      "color": "6"
+    },
+    {
+      "id": "features-std",
+      "type": "text",
+      "text": "## 📋 ۱۰ بخش ویژگی‌های استاندارد\n\n۱. مدیریت محتوای آموزشی (۱۵)\n۲. مدیریت کاربران (۶)\n۳. آزمون و ارزیابی (۱۲)\n۴. گزارش‌گیری (۱۰)\n۵. ارتباطات (۱۱)\n۶. اتوماسیون (۸)\n۷. یکپارچگی (۳)\n۸. UI/UX (۶)\n۹. امنیت (۶)\n۱۰. قابلیت‌های فنی (۱۱)\n\n**جمع: ۸۸ ویژگی**",
+      "x": 600,
+      "y": 300,
+      "width": 480,
+      "height": 360,
+      "color": "3"
+    },
+    {
+      "id": "deliverables",
+      "type": "text",
+      "text": "## 📦 فازهای تحویلی\n\n**فاز ۱:** Core Engine (۵ لایه)\n**فاز ۲:** Enterprise Standard (۷ لایه)\n**فاز ۳:** Academic (۷ لایه)\n**فاز ۴:** Enterprise Smart\n  - Gamification (۹ زیرماژول)\n  - AI Engine (۵ زیرماژول)\n  - Marketplace (۷ قابلیت)\n\n**گواهینامه:** اَفتا (AFTA)",
+      "x": -400,
+      "y": 720,
+      "width": 800,
+      "height": 280,
+      "color": "2"
+    },
+    {
+      "id": "tech-standards",
+      "type": "text",
+      "text": "## 🔧 استانداردهای فنی\n\n- SCORM 1.2\n- SCORM 2004 4th\n- xAPI (Tin Can)\n- HTML5\n- H5P\n- Adobe Connect / SkyRoom / BBB\n- REST API + Webhook\n- SSL + Audit Log",
+      "x": 1180,
+      "y": 720,
+      "width": 400,
+      "height": 280,
+      "color": "1"
+    },
+    {
+      "id": "comparison",
+      "type": "text",
+      "text": "## 🆚 تفاوت نسخه‌ها\n\n| | سازمانی | آکادمیک |\n|---|---|---|\n| هدف | عملکرد+انطباق | تحصیلی |\n| ساختار | دوره+مسیر | درس+ترم |\n| کاربر | کارمند | دانشجو |\n| ارزیابی | KPI+گواهی | نمره+کارنامه |\n| یکپارچگی | ERP/HRM | SIS |",
+      "x": -1500,
+      "y": 720,
+      "width": 480,
+      "height": 280,
+      "color": "3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "title",
+      "toNode": "core",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e2",
+      "fromNode": "core",
+      "toNode": "ent-std",
+      "label": "پایه",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e3",
+      "fromNode": "core",
+      "toNode": "aca-std",
+      "label": "پایه",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e4",
+      "fromNode": "ent-std",
+      "toNode": "ent-smart-gamification",
+      "label": "ارتقا",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e5",
+      "fromNode": "ent-std",
+      "toNode": "ent-smart-ai",
+      "label": "ارتقا",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e6",
+      "fromNode": "ent-std",
+      "toNode": "ent-smart-marketplace",
+      "label": "ارتقا",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e7",
+      "fromNode": "ent-std",
+      "toNode": "features-std",
+      "label": "شامل",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e8",
+      "fromNode": "aca-std",
+      "toNode": "features-std",
+      "label": "شامل",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e9",
+      "fromNode": "core",
+      "toNode": "deliverables",
+      "label": "تحویل",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e10",
+      "fromNode": "features-std",
+      "toNode": "tech-standards",
+      "label": "استاندارد",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e11",
+      "fromNode": "ent-std",
+      "toNode": "comparison",
+      "label": "مقایسه",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "e12",
+      "fromNode": "aca-std",
+      "toNode": "comparison",
+      "label": "مقایسه",
+      "toEnd": "arrow"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "./attachments",
+  "spellcheck": false,
+  "rightToLeft": true
+}
