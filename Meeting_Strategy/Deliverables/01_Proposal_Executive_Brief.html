@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>پروپوزال اجرایی — Ymax</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+@page {
+  size: A4;
+  margin: 0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: #ffffff;
+  color: #1a1a2e;
+  line-height: 1.8;
+  font-size: 12pt;
+}
+
+/* ===== PAGE STYLES ===== */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm 22mm;
+  background: #ffffff;
+  position: relative;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+
+/* ===== COVER PAGE ===== */
+.cover {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25mm 22mm;
+}
+.cover-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.cover-logo {
+  font-size: 28pt;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.cover-logo span { color: #3b82f6; }
+.cover-date {
+  font-size: 10pt;
+  opacity: 0.7;
+  text-align: left;
+}
+.cover-center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cover-eyebrow {
+  font-size: 11pt;
+  color: #3b82f6;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.cover-title {
+  font-size: 36pt;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.cover-subtitle {
+  font-size: 15pt;
+  font-weight: 300;
+  opacity: 0.85;
+  line-height: 1.6;
+  max-width: 80%;
+}
+.cover-divider {
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 30px 0;
+}
+.cover-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 9pt;
+  opacity: 0.6;
+}
+.cover-bottom-left { text-align: left; }
+
+/* ===== CONTENT PAGES ===== */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.page-header-title {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 1px;
+}
+.page-header-logo {
+  font-size: 12pt;
+  font-weight: 700;
+  color: #0f172a;
+}
+.page-header-logo span { color: #3b82f6; }
+
+h2 {
+  font-size: 18pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+  border-right: 4px solid #3b82f6;
+  padding-right: 12px;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 12px;
+  text-align: justify;
+  font-size: 11pt;
+  line-height: 2;
+  color: #334155;
+}
+
+.callout {
+  background: #f0f9ff;
+  border-right: 4px solid #3b82f6;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 10.5pt;
+  line-height: 1.9;
+}
+.callout strong { color: #1e40af; }
+
+/* ===== TABLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-size: 10pt;
+}
+th {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 10px 12px;
+  text-align: right;
+  font-weight: 600;
+}
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+}
+tr:nth-child(even) { background: #f8fafc; }
+
+/* ===== FEATURE CARDS ===== */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin: 15px 0;
+}
+.feature-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.feature-card .num {
+  font-size: 22pt;
+  font-weight: 800;
+  color: #3b82f6;
+  display: block;
+  margin-bottom: 5px;
+}
+.feature-card .label {
+  font-size: 9pt;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ===== DIFFERENTIATION ===== */
+.diff-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+.diff-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: #3b82f6;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12pt;
+}
+.diff-content h4 {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+.diff-content p {
+  font-size: 10pt;
+  margin: 0;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  display: flex;
+  gap: 0;
+  margin: 20px 0;
+}
+.timeline-phase {
+  flex: 1;
+  background: #f1f5f9;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.timeline-phase:nth-child(1) { border-radius: 0 8px 8px 0; }
+.timeline-phase:nth-child(2) { background: #dbeafe; }
+.timeline-phase:nth-child(3) { background: #bfdbfe; border-radius: 8px 0 0 8px; }
+.timeline-phase h4 {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+.timeline-phase .duration {
+  font-size: 14pt;
+  font-weight: 800;
+  color: #1e40af;
+}
+.timeline-phase .desc {
+  font-size: 9pt;
+  color: #475569;
+  margin-top: 5px;
+}
+
+/* ===== CTA BOX ===== */
+.cta-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+.cta-box h3 {
+  color: #ffffff;
+  margin-top: 0;
+  font-size: 14pt;
+}
+.cta-box p {
+  color: #cbd5e1;
+  font-size: 10.5pt;
+  margin-bottom: 0;
+}
+
+/* ===== FOOTER ===== */
+.page-footer {
+  position: absolute;
+  bottom: 12mm;
+  right: 22mm;
+  left: 22mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8pt;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 5px;
+}
+
+/* ===== COMPANY INFO BOX ===== */
+.company-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 15px 0;
+  font-size: 10pt;
+}
+.company-info-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.company-info-item .label {
+  color: #64748b;
+  font-size: 9pt;
+  display: block;
+}
+.company-info-item .value {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+@media screen {
+  body { background: #e2e8f0; padding: 20px; }
+  .page { box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 0 auto 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== COVER PAGE ===== -->
+<div class="page cover">
+  <div class="cover-top">
+    <div class="cover-logo">Y<span>max</span></div>
+    <div class="cover-date">
+      شهریور ۱۴۰۵<br>
+      نسخه ۱.۰
+    </div>
+  </div>
+
+  <div class="cover-center">
+    <div class="cover-eyebrow">پروپوزال اجرایی</div>
+    <div class="cover-title">طراحی و توسعه<br>سامانه مدیریت یادگیری هوشمند</div>
+    <div class="cover-divider"></div>
+    <div class="cover-subtitle">
+      پاسخی نوآورانه به نیازمندی‌های RFP نسخه ۳.۰<br>
+      مرکز گسترش فناوری اطلاعات (مگفا)
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div>
+      <strong>هوشمند آذین بازار الماس</strong><br>
+      Ymax.ir — info@ymax.ir — ۰۲۱-۸۸۷۴۷۱۶۶
+    </div>
+    <div class="cover-bottom-left">
+      محرمانه<br>
+      ویژه ارائه به مدیریت مگفا
+    </div>
+  </div>
+</div>
+
+<!-- ===== PAGE 2: EXECUTIVE SUMMARY + COMPANY ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">پروپوزال اجرایی — Ymax</div>
+    <div class="page-header-logo">Y<span>max</span></div>
+  </div>
+
+  <h2>خلاصه اجرایی</h2>
+
+  <p>
+    شرکت <strong>هوشمند آذین بازار الماس (Ymax)</strong> با افتخار پاسخ خود را به درخواست پیشنهاد (RFP) طراحی و توسعه سامانه مدیریت یادگیری هوشمند مرکز گسترش فناوری اطلاعات (مگفا) ارائه می‌نماید. این پروپوزال حاصل مطالعه دقیق RFP نسخه ۳.۰، تحلیل ۱۱۵ ویژگی مورد انتظار، و بررسی جایگاه رقابتی محصولات موجود در بازار است.
+  </p>
+
+  <p>
+    ما در Ymax با تکیه بر تجربه‌ای عمیق در پروژه‌های نرم‌افزاری بزرگ دولتی و سازمانی — که سال‌ها به‌عنوان پیمانکار دوم در قلب این پروژه‌ها فعالیت کرده‌ایم — اکنون با انگیزه‌ای تازه و استراتژی‌ای متفاوت، گام به مسیر پیمانکاری اول برداشته‌ایم. این تحول استراتژیک به معنای پذیرش مسئولیت کامل پروژه، پاسخگویی مستقیم به کارفرما، و ارائه محصولی متمایز است که نیازهای برآورده‌نشده بازار EdTech ایران را پوشش دهد.
+  </p>
+
+  <div class="callout">
+    <strong>پیشنهاد ما در یک جمله:</strong> توسعه LMS هوشمند با معماری ماژولار، شامل هسته مشترک + نسخه‌های استاندارد و هوشمند سازمانی + نسخه آکادمیک، در دو فاز ۹۰ روزه (مجموعاً ۱۸۰ روز کاری)، با دموی زنده آماده ارائه.
+  </p>
+
+  <h2 style="margin-top: 30px;">معرفی شرکت</h2>
+
+  <div class="company-info">
+    <div class="company-info-item">
+      <span class="label">نام رسمی</span>
+      <span class="value">هوشمند آذین بازار الماس</span>
+    </div>
+    <div class="company-info-item">
+      <span class="label">برند تجاری</span>
+      <span class="value">Ymax.ir</span>
+    </div>
+    <div class="company-info-item">
+      <span class="label">تاریخ تأسیس</span>
+      <span class="value">۱۴۰۳/۰۴/۲۰</span>
+    </div>
+    <div class="company-info-item">
+      <span class="label">شماره ثبت</span>
+      <span class="value">۶۳۴۶۳۷</span>
+    </div>
+    <div class="company-info-item">
+      <span class="label">شناسه ملی</span>
+      <span class="value">۱۴۰۱۳۵۳۷۵۶۲</span>
+    </div>
+    <div class="company-info-item">
+      <span class="label">تلفن</span>
+      <span class="value">۰۲۱-۸۸۷۴۷۱۶۶</span>
+    </div>
+    <div class="company-info-item" style="grid-column: span 2;">
+      <span class="label">آدرس</span>
+      <span class="value">تهران، سهروردی شمالی، خیابان شهید حسین میرزائی زینالی، خیابان شهید سعیدرضا عشوری، پلاک ۴۰، طبقه ۱، واحد شمالی</span>
+    </div>
+  </div>
+
+  <p>
+    شرکت Ymax با تمرکز بر توسعه نرم‌افزارهای سازمانی در مقیاس بزرگ، تجربه اجرای پروژه‌هایی برای وزارت جهاد کشاورزی، سازمان بنادر، وزارت دفاع، سازمان تنظیم مقررات رادیویی، و کانون مترجمان رسمی ایران را در کارنامه خود دارد. تخصص اصلی ما در حوزه‌های سامانه‌های یکپارچه governmental، مانیتورینگ و پایش بلادرنگ، اتوماسیون فرآیندهای سازمانی، و توسعه اپلیکیشن‌های موبایل و وب است.
+  </p>
+
+  <h2 style="margin-top: 25px;">چرا مگفا؟</h2>
+
+  <p>
+    تصمیم ما برای ورود به پروژه LMS مگفا، ناشی از یک تحول بنیادین در استراتژی شرکت Ymax است. طی سال‌های فعالیت، ما به‌عنوان <strong>پیمانکار دوم</strong> در پروژه‌های بزرگی چون سامانه پنجره واحد جهاد، شبکه یکپارچه بنادر، و سامانه‌های مانیتورینگ مخابراتی فعالیت کرده‌ایم. در این نقش، ما پیچیده‌ترین بخش‌های فنی — از طراحی معماری هسته تا امنیت، از مانیتورینگ بلادرنگ تا یکپارچگی سیستم‌های قدیمی — را اجرا کرده‌ایم، اما پاسخگویی نهایی و ارتباط مستقیم با کارفرما در دست پیمانکار اول بوده است.
+  </p>
+
+  <p>
+    اکنون با تجمیع این تجربه فنی عمیق و تصمیم به <strong>پیمانکاری اول</strong>، گام به مسیری جدید برداشته‌ایم. پروژه LMS مگفا برای ما صرفاً یک پروژه نیست — بلکه نخستین پروژه‌ای است که در آن، کل مسئولیت از تحلیل تا تحویل، از ارتباط با کارفرما تا پشتیبانی، بر دوش ماست. به همین دلیل، با نگاهی متفاوت و تعهدی فراتر از قرارداد، به این پروژه می‌نگریم.
+  </p>
+
+  <p>
+    مگفا با ۴۵ سال سابقه، جایگاه ویژه‌ای در فاوا ایران دارد. واحد یادگیری الکترونیکی این شرکت در حال احیاست و بودجه ۱۲ میلیارد تومانی مصوب برای این پروژه نشان از جدیت مگفا دارد. ما معتقدیم ترکیب تجربه فنی عمیق ما با اشتیاق مگفا برای نوآوری در EdTech، می‌تواند محصولی متمایز خلق کند که نه‌تنها نیازهای RFP را برآورده کند، بلکه معیار جدیدی برای LMS در ایران تعریف نماید.
+  </p>
+
+  <div class="page-footer">
+    <span>Ymax — هوشمند آذین بازار الماس</span>
+    <span>صفحه ۲ از ۴</span>
+  </div>
+</div>
+
+<!-- ===== PAGE 3: SOLUTION + DIFFERENTIATION ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">راه‌حل پیشنهادی و تمایز</div>
+    <div class="page-header-logo">Y<span>max</span></div>
+  </div>
+
+  <h2>راه‌حل پیشنهادی</h2>
+
+  <p>
+    راه‌حل ما بر پایه معماری ماژولار متناسب با RFP نسخه ۳.۰ طراحی شده است. این معماری شامل یک هسته مشترک (Core Engine) است که تمام قابلیت‌های پایه را فراهم می‌کند، و سه لایه تخصصی — سازمانی استاندارد، سازمانی هوشمند، و آکادمیک — که به‌صورت پلاگین روی هسته سوار می‌شوند. این رویکرد، به جای توسعه چند محصول جداگانه، یک پلتفرم منعطف ایجاد می‌کند که با هزینه کمتر و انعطاف بیشتر، نیازهای متنوع بازار را پوشش می‌دهد.
+  </p>
+
+  <p>
+    مهم‌تر از طراحی، ما <strong>دموی زنده آماده</strong> داریم که اثبات می‌کند راه‌حل ما صرفاً یک قول روی کاغذ نیست. این دمو که روی دامنه lms.ecardo.ir در دسترس است، شامل ۸۴۹ تابع API فعال، گیمیفیکیشن کامل با ۹ زیرماژول، موتور هوش مصنوعی، و بخش تجارت با درگاه ملت است. ما به مگفا پیشنهاد می‌کنیم پیش از هر تصمیمی، این دمو را بررسی نماید.
+  </p>
+
+  <div class="features">
+    <div class="feature-card">
+      <span class="num">۸۴۹</span>
+      <span class="label">تابع API فعال</span>
+    </div>
+    <div class="feature-card">
+      <span class="num">۹/۹</span>
+      <span class="label">زیرماژول گیمیفیکیشن</span>
+    </div>
+    <div class="feature-card">
+      <span class="num">۷/۷</span>
+      <span class="label">قابلیت Marketplace</span>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 25px;">تمایز ما</h2>
+
+  <p>
+    ما با تواضع و صداقت، سه نقطه قوت خود را مطرح می‌کنیم — نه به‌عنوان ادعا، بلکه به‌عنوان واقعیتی که در دمو قابل مشاهده است:
+  </p>
+
+  <div class="diff-item">
+    <div class="diff-num">۱</div>
+    <div class="diff-content">
+      <h4>تجربه عمیق در پروژه‌های دولتی مقیاس بزرگ</h4>
+      <p>سال‌ها به‌عنوان پیمانکار دوم در قلب پروژه‌های جهاد، بنادر، و دفاع فعالیت کرده‌ایم. این یعنی ما پیچیده‌ترین چالش‌های فنی — امنیت، مقیاس‌پذیری، یکپارچگی با سیستم‌های قدیمی — را از نزدیک تجربه کرده‌ایم. حالا با مسئولیت کامل پیمانکاری اول، این تجربه را در خدمت مگفا قرار می‌دهیم.</p>
+    </div>
+  </div>
+
+  <div class="diff-item">
+    <div class="diff-num">۲</div>
+    <div class="diff-content">
+      <h4>دموی زنده، نه قول روی کاغذ</h4>
+      <p>برخلاف بسیاری از پیشنهادها که فقط طرح ارائه می‌دهند، ما محصولی ساخته‌شده داریم. دموی lms.ecardo.ir با ۸۴۹ تابع API، گیمیفیکیشن منطبق با RFP بخش ۸.۱، موتور AI فارسی، و Marketplace کامل — همگی قابل آزمایش قبل از هر تصمیمی. هیچ رقیبی در ایران این ترکیب را به‌صورت آماده ندارد.</p>
+    </div>
+  </div>
+
+  <div class="diff-item">
+    <div class="diff-num">۳</div>
+    <div class="diff-content">
+      <h4>درک دقیق RFP با تحلیل ۱۱۵ ویژگی</h4>
+      <p>ما RFP نسخه ۳.۰ را نه تنها خوانده‌ایم، بلکه هر یک از ۱۱۵ ویژگی آن را تحلیل کرده، با Moodle v4.5 مقایسه کرده، و درصد تغییر مورد نیاز هر کدام را محاسبه نموده‌ایم. این درک عمیق به ما امکان می‌دهد در جلسه فنی، نه با کلی‌گویی، بلکه با جزئیات دقیق پاسخ دهیم.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 25px;">برنامه زمان‌بندی</h2>
+
+  <div class="timeline">
+    <div class="timeline-phase">
+      <h4>فاز ۱</h4>
+      <div class="duration">۹۰ روز</div>
+      <div class="desc">Core Engine + Enterprise Standard<br>(شامل MVP قابل تحویل)</div>
+    </div>
+    <div class="timeline-phase">
+      <h4>فاز ۲</h4>
+      <div class="duration">۹۰ روز</div>
+      <div class="desc">Enterprise Smart + Academic<br>(AI + Gamif + MP + آکادمیک)</div>
+    </div>
+    <div class="timeline-phase">
+      <h4>کل پروژه</h4>
+      <div class="duration">۱۸۰ روز</div>
+      <div class="desc">تحویل کامل + ۲ ماه<br>تست و دیباگ</div>
+    </div>
+  </div>
+
+  <p style="font-size: 10pt; color: #64748b; margin-top: 10px;">
+    مدل همکاری: پروژه‌ای (One-time) — مدت پشتیبانی رایگان: ندارد (۲ ماه تست و دیباگ پس از تحویل)
+  </p>
+
+  <div class="page-footer">
+    <span>Ymax — هوشمند آذین بازار الماس</span>
+    <span>صفحه ۳ از ۴</span>
+  </div>
+</div>
+
+<!-- ===== PAGE 4: CLOSING + NEXT STEPS ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">گام بعدی و جمع‌بندی</div>
+    <div class="page-header-logo">Y<span>max</span></div>
+  </div>
+
+  <h2>گام بعدی مورد نظر ما</h2>
+
+  <p>
+    ما با احترام به فرآیند ارزیابی مگفا، در پایان جلسه اول انتظار <strong>اعلام نتیجه</strong> و در صورت آمادگی، <strong>شروع فرآیند قرارداد</strong> را داریم. ما آماده‌ایم تا در جلسات فنی بعدی، جزئیات فنی راه‌حل، سناریوی دمو، و برنامه اجرایی را به‌طور کامل ارائه دهیم.
+  </p>
+
+  <h2 style="margin-top: 25px;">آنچه از جلسه اول انتظار داریم</h2>
+
+  <table>
+    <tr>
+      <th style="width: 10%;">#</th>
+      <th style="width: 40%;">خواسته</th>
+      <th style="width: 50%;">توضیح</th>
+    </tr>
+    <tr>
+      <td>۱</td>
+      <td>بررسی دموی زنده</td>
+      <td>تیم مگفا دموی lms.ecardo.ir را بررسی کند و بازخورد فنی بدهد</td>
+    </tr>
+    <tr>
+      <td>۲</td>
+      <td>پرسش و پاسخ فنی</td>
+      <td>فرصت برای پاسخ به سؤالات فنی تیم مگفا درباره معماری و استک</td>
+    </tr>
+    <tr>
+      <td>۳</td>
+      <td>اعلام نتیجه اولیه</td>
+      <td>در صورت آمادگی، اعلام تمایل به ادامه همکاری</td>
+    </tr>
+    <tr>
+      <td>۴</td>
+      <td>شروع فرآیند قرارداد</td>
+      <td>در صورت توافق اولیه، شروع مذاکرات قراردادی</td>
+    </tr>
+  </table>
+
+  <h2 style="margin-top: 25px;">تعهد ما</h2>
+
+  <p>
+    ما در Ymax متعهد می‌شویم که در صورت اعتماد مگفا، این پروژه را نه به‌عنوان یک سفارش، بلکه به‌عنوان نخستین پروژه پیمانکاری اول خود — با حداکثر تعهد، کیفیت، و پاسخگویی — اجرا کنیم. موفقیت این پروژه برای ما، فراتر از یک قرارداد، آغاز مسیر جدیدی است که با شریک استراتژیک موثری چون مگفا طی خواهد شد.
+  </p>
+
+  <div class="cta-box">
+    <h3>آماده ارائه دمو و پاسخ به پرسش‌های فنی</h3>
+    <p>دمو: lms.ecardo.ir — اطلاعات: info@ymax.ir — تلفن: ۰۲۱-۸۸۷۴۷۱۶۶</p>
+  </div>
+
+  <h2 style="margin-top: 30px;">تماس</h2>
+
+  <table>
+    <tr>
+      <td style="width: 30%; font-weight: 600;">شرکت</td>
+      <td>هوشمند آذین بازار الماس (Ymax)</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600;">وب‌سایت</td>
+      <td>Ymax.ir</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600;">ایمیل</td>
+      <td>info@ymax.ir</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600;">تلفن</td>
+      <td>۰۲۱-۸۸۷۴۷۱۶۶</td>
+    </tr>
+    <tr>
+      <td style="font-weight: 600;">آدرس</td>
+      <td>تهران، سهروردی شمالی، خیابان شهید میرزائی زینالی، پلاک ۴۰</td>
+    </tr>
+  </table>
+
+  <p style="text-align: center; margin-top: 30px; font-size: 10pt; color: #64748b;">
+    با احترام — تیم Ymax<br>
+    شهریور ۱۴۰۵
+  </p>
+
+  <div class="page-footer">
+    <span>Ymax — هوشمند آذین بازار الماس</span>
+    <span>صفحه ۴ از ۴</span>
+  </div>
+</div>
+
+</body>
+</html>
