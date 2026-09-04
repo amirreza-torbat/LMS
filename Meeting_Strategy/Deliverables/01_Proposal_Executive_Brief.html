@@ -2,10 +2,10 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>پروپوزال اجرایی — Ymax</title>
+<title>پروپوزال رسمی — طراحی و توسعه LMS هوشمند</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 @page {
   size: A4;
@@ -13,289 +13,239 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body {
-  font-family: 'Vazirmatn', sans-serif;
+  font-family: 'Vazirmatn', 'Tahoma', sans-serif;
   background: #ffffff;
-  color: #1a1a2e;
-  line-height: 1.8;
+  color: #1a1a1a;
+  line-height: 2.1;
   font-size: 12pt;
 }
 
-/* ===== PAGE STYLES ===== */
+/* ===== PAGE ===== */
 .page {
   width: 210mm;
   min-height: 297mm;
-  padding: 20mm 22mm;
+  padding: 25mm 25mm 22mm 25mm;
   background: #ffffff;
   position: relative;
   page-break-after: always;
 }
 .page:last-child { page-break-after: auto; }
 
-/* ===== COVER PAGE ===== */
+/* ===== COVER ===== */
 .cover {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-  color: #ffffff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cover-frame {
+  border: 2px solid #0f172a;
+  margin: 20mm;
+  padding: 18mm 20mm;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25mm 22mm;
 }
-.cover-top { display: flex; justify-content: space-between; align-items: flex-start; }
-.cover-logo {
-  font-size: 28pt;
-  font-weight: 800;
-  letter-spacing: -1px;
+.cover-top {
+  text-align: center;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
 }
-.cover-logo span { color: #3b82f6; }
-.cover-date {
-  font-size: 10pt;
-  opacity: 0.7;
-  text-align: left;
+.cover-top .org {
+  font-size: 11pt;
+  color: #475569;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cover-top .org-name {
+  font-size: 14pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 5px;
 }
 .cover-center {
+  text-align: center;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 .cover-eyebrow {
-  font-size: 11pt;
-  color: #3b82f6;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
+  font-size: 10pt;
+  color: #64748b;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 .cover-title {
-  font-size: 36pt;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-bottom: 20px;
+  font-size: 24pt;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 .cover-subtitle {
-  font-size: 15pt;
-  font-weight: 300;
-  opacity: 0.85;
-  line-height: 1.6;
+  font-size: 13pt;
+  color: #475569;
+  font-weight: 400;
+  line-height: 1.8;
   max-width: 80%;
+  margin: 0 auto;
 }
-.cover-divider {
-  width: 60px;
-  height: 4px;
-  background: #3b82f6;
-  margin: 30px 0;
+.cover-meta {
+  width: 60%;
+  margin: 30px auto 0;
+  border-top: 1px solid #cbd5e1;
+  padding-top: 15px;
 }
-.cover-bottom {
+.cover-meta-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  font-size: 9pt;
-  opacity: 0.6;
+  font-size: 10pt;
+  color: #334155;
+  padding: 4px 0;
 }
-.cover-bottom-left { text-align: left; }
+.cover-meta-row .label {
+  color: #64748b;
+  font-weight: 500;
+}
+.cover-meta-row .value {
+  color: #0f172a;
+  font-weight: 600;
+}
+.cover-bottom {
+  text-align: center;
+  font-size: 9pt;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+  margin-top: 20px;
+}
 
-/* ===== CONTENT PAGES ===== */
+/* ===== BODY CONTENT ===== */
 .page-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #0f172a;
-  padding-bottom: 10px;
-  margin-bottom: 25px;
+  align-items: baseline;
+  border-bottom: 1px solid #0f172a;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
-.page-header-title {
-  font-size: 10pt;
-  font-weight: 600;
-  color: #64748b;
-  letter-spacing: 1px;
-}
-.page-header-logo {
-  font-size: 12pt;
-  font-weight: 700;
-  color: #0f172a;
-}
-.page-header-logo span { color: #3b82f6; }
-
-h2 {
-  font-size: 18pt;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 15px;
-  border-right: 4px solid #3b82f6;
-  padding-right: 12px;
-  line-height: 1.4;
-}
-
-h3 {
-  font-size: 13pt;
-  font-weight: 600;
-  color: #1e293b;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 12px;
-  text-align: justify;
-  font-size: 11pt;
-  line-height: 2;
-  color: #334155;
-}
-
-.callout {
-  background: #f0f9ff;
-  border-right: 4px solid #3b82f6;
-  padding: 15px 20px;
-  margin: 15px 0;
-  border-radius: 0 8px 8px 0;
-  font-size: 10.5pt;
-  line-height: 1.9;
-}
-.callout strong { color: #1e40af; }
-
-/* ===== TABLES ===== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 15px 0;
-  font-size: 10pt;
-}
-th {
-  background: #0f172a;
-  color: #ffffff;
-  padding: 10px 12px;
-  text-align: right;
-  font-weight: 600;
-}
-td {
-  padding: 8px 12px;
-  border-bottom: 1px solid #e2e8f0;
-  color: #334155;
-}
-tr:nth-child(even) { background: #f8fafc; }
-
-/* ===== FEATURE CARDS ===== */
-.features {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 12px;
-  margin: 15px 0;
-}
-.feature-card {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-}
-.feature-card .num {
-  font-size: 22pt;
-  font-weight: 800;
-  color: #3b82f6;
-  display: block;
-  margin-bottom: 5px;
-}
-.feature-card .label {
+.page-header-right {
   font-size: 9pt;
   color: #64748b;
   font-weight: 500;
 }
+.page-header-left {
+  font-size: 9pt;
+  color: #64748b;
+}
 
-/* ===== DIFFERENTIATION ===== */
-.diff-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-  padding: 12px;
-  background: #fafafa;
-  border-radius: 8px;
-}
-.diff-num {
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  background: #3b82f6;
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 12pt;
-}
-.diff-content h4 {
-  font-size: 11pt;
+h1.section-title {
+  font-size: 16pt;
   font-weight: 700;
   color: #0f172a;
-  margin-bottom: 4px;
-}
-.diff-content p {
-  font-size: 10pt;
-  margin: 0;
-  line-height: 1.7;
-  color: #475569;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid #0f172a;
 }
 
-/* ===== TIMELINE ===== */
-.timeline {
-  display: flex;
-  gap: 0;
-  margin: 20px 0;
+h2.subsection {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 22px;
+  margin-bottom: 10px;
 }
-.timeline-phase {
+
+p {
+  margin-bottom: 14px;
+  text-align: justify;
+  font-size: 11.5pt;
+  line-height: 2.1;
+  color: #1e293b;
+  text-indent: 0;
+}
+
+p.first-para {
+  text-indent: 0;
+}
+
+/* Numbered list for formal sections */
+ol.formal-list {
+  margin: 12px 0 14px 0;
+  padding-right: 25px;
+  font-size: 11.5pt;
+  line-height: 2.1;
+  color: #1e293b;
+}
+ol.formal-list li {
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+/* Formal table */
+table.formal {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 10.5pt;
+}
+table.formal th {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 8px 10px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 10pt;
+  border: 1px solid #0f172a;
+}
+table.formal td {
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  font-size: 10pt;
+}
+table.formal tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+/* Signature block */
+.signature-block {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.signature-box {
   flex: 1;
-  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
   padding: 15px;
   text-align: center;
-  position: relative;
 }
-.timeline-phase:nth-child(1) { border-radius: 0 8px 8px 0; }
-.timeline-phase:nth-child(2) { background: #dbeafe; }
-.timeline-phase:nth-child(3) { background: #bfdbfe; border-radius: 8px 0 0 8px; }
-.timeline-phase h4 {
-  font-size: 11pt;
-  font-weight: 700;
+.signature-box .role {
+  font-size: 10pt;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+.signature-box .line {
+  border-bottom: 1px solid #0f172a;
+  margin: 0 20px 8px;
+}
+.signature-box .name {
+  font-size: 10pt;
+  font-weight: 600;
   color: #0f172a;
-  margin-bottom: 5px;
-}
-.timeline-phase .duration {
-  font-size: 14pt;
-  font-weight: 800;
-  color: #1e40af;
-}
-.timeline-phase .desc {
-  font-size: 9pt;
-  color: #475569;
-  margin-top: 5px;
 }
 
-/* ===== CTA BOX ===== */
-.cta-box {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #ffffff;
-  padding: 20px 25px;
-  border-radius: 12px;
-  margin-top: 20px;
-  text-align: center;
-}
-.cta-box h3 {
-  color: #ffffff;
-  margin-top: 0;
-  font-size: 14pt;
-}
-.cta-box p {
-  color: #cbd5e1;
-  font-size: 10.5pt;
-  margin-bottom: 0;
-}
-
-/* ===== FOOTER ===== */
+/* Footer */
 .page-footer {
   position: absolute;
   bottom: 12mm;
-  right: 22mm;
-  left: 22mm;
+  right: 25mm;
+  left: 25mm;
   display: flex;
   justify-content: space-between;
   font-size: 8pt;
@@ -304,31 +254,39 @@ tr:nth-child(even) { background: #f8fafc; }
   padding-top: 5px;
 }
 
-/* ===== COMPANY INFO BOX ===== */
-.company-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin: 15px 0;
+/* Table of contents */
+.toc {
+  list-style: none;
+  padding: 0;
+}
+.toc li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 6px 0;
+  border-bottom: 1px dotted #cbd5e1;
+  font-size: 11pt;
+}
+.toc li .toc-title {
+  color: #1e293b;
+  font-weight: 500;
+}
+.toc li .toc-page {
+  color: #64748b;
+  font-weight: 600;
+}
+.toc li.sub {
+  padding-right: 20px;
   font-size: 10pt;
 }
-.company-info-item {
-  padding: 6px 0;
-  border-bottom: 1px solid #f1f5f9;
-}
-.company-info-item .label {
-  color: #64748b;
-  font-size: 9pt;
-  display: block;
-}
-.company-info-item .value {
-  color: #0f172a;
-  font-weight: 500;
+.toc li.sub .toc-title {
+  color: #475569;
+  font-weight: 400;
 }
 
 @media screen {
   body { background: #e2e8f0; padding: 20px; }
-  .page { box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin: 0 auto 20px; }
+  .page { box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin: 0 auto 20px; }
 }
 </style>
 </head>
@@ -336,293 +294,528 @@ tr:nth-child(even) { background: #f8fafc; }
 
 <!-- ===== COVER PAGE ===== -->
 <div class="page cover">
-  <div class="cover-top">
-    <div class="cover-logo">Y<span>max</span></div>
-    <div class="cover-date">
-      شهریور ۱۴۰۵<br>
-      نسخه ۱.۰
+  <div class="cover-frame">
+    <div class="cover-top">
+      <div class="org">شرکت هوشمند آذین بازار الماس</div>
+      <div class="org-name">Ymax</div>
     </div>
-  </div>
 
-  <div class="cover-center">
-    <div class="cover-eyebrow">پروپوزال اجرایی</div>
-    <div class="cover-title">طراحی و توسعه<br>سامانه مدیریت یادگیری هوشمند</div>
-    <div class="cover-divider"></div>
-    <div class="cover-subtitle">
-      پاسخی نوآورانه به نیازمندی‌های RFP نسخه ۳.۰<br>
-      مرکز گسترش فناوری اطلاعات (مگفا)
-    </div>
-  </div>
+    <div class="cover-center">
+      <div class="cover-eyebrow">سند درخواست پیشنهاد</div>
+      <div class="cover-title">طراحی و توسعه سامانه مدیریت<br>یادگیری هوشمند</div>
+      <div class="cover-subtitle">
+        پاسخ رسمی به درخواست پیشنهاد (RFP) نسخه ۳.۰<br>
+        مرکز گسترش فناوری اطلاعات (مگفا)
+      </div>
 
-  <div class="cover-bottom">
-    <div>
-      <strong>هوشمند آذین بازار الماس</strong><br>
-      Ymax.ir — info@ymax.ir — ۰۲۱-۸۸۷۴۷۱۶۶
+      <div class="cover-meta">
+        <div class="cover-meta-row">
+          <span class="label">ارائه‌دهنده پیشنهاد:</span>
+          <span class="value">هوشمند آذین بازار الماس (Ymax)</span>
+        </div>
+        <div class="cover-meta-row">
+          <span class="label">کارفرما:</span>
+          <span class="value">مرکز گسترش فناوری اطلاعات (مگفا)</span>
+        </div>
+        <div class="cover-meta-row">
+          <span class="label">شماره سند:</span>
+          <span class="value">YMX-PRP-LMS-001</span>
+        </div>
+        <div class="cover-meta-row">
+          <span class="label">نسخه:</span>
+          <span class="value">۱.۰</span>
+        </div>
+        <div class="cover-meta-row">
+          <span class="label">تاریخ:</span>
+          <span class="value">شهریور ۱۴۰۵</span>
+        </div>
+        <div class="cover-meta-row">
+          <span class="label">طبقه‌بندی:</span>
+          <span class="value">رسمی — محرمانه</span>
+        </div>
+      </div>
     </div>
-    <div class="cover-bottom-left">
-      محرمانه<br>
-      ویژه ارائه به مدیریت مگفا
+
+    <div class="cover-bottom">
+      این سند دارای ماهیت محرمانه بوده و استفاده از آن تنها با مجوز کتبی شرکت ارائه‌دهنده مجاز است.
     </div>
   </div>
 </div>
 
-<!-- ===== PAGE 2: EXECUTIVE SUMMARY + COMPANY ===== -->
+<!-- ===== TABLE OF CONTENTS ===== -->
 <div class="page">
   <div class="page-header">
-    <div class="page-header-title">پروپوزال اجرایی — Ymax</div>
-    <div class="page-header-logo">Y<span>max</span></div>
+    <div class="page-header-right">فهرست مطالب</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
   </div>
 
-  <h2>خلاصه اجرایی</h2>
+  <h1 class="section-title">فهرست مطالب</h1>
 
-  <p>
-    شرکت <strong>هوشمند آذین بازار الماس (Ymax)</strong> با افتخار پاسخ خود را به درخواست پیشنهاد (RFP) طراحی و توسعه سامانه مدیریت یادگیری هوشمند مرکز گسترش فناوری اطلاعات (مگفا) ارائه می‌نماید. این پروپوزال حاصل مطالعه دقیق RFP نسخه ۳.۰، تحلیل ۱۱۵ ویژگی مورد انتظار، و بررسی جایگاه رقابتی محصولات موجود در بازار است.
-  </p>
+  <ul class="toc">
+    <li><span class="toc-title">۱. مقدمه و بیانیه پیشنهاد</span><span class="toc-page">۳</span></li>
+    <li><span class="toc-title">۲. معرفی شرکت ارائه‌دهنده</span><span class="toc-page">۳</span></li>
+    <li><span class="toc-title">۳. درک نیازمندی‌ها و تحلیل RFP</span><span class="toc-page">۴</span></li>
+    <li><span class="toc-title">۴. راه‌حل پیشنهادی و معماری سیستم</span><span class="toc-page">۵</span></li>
+    <li class="sub"><span class="toc-title">۴-۱. معماری کلی و رویکرد ماژولار</span><span class="toc-page">۵</span></li>
+    <li class="sub"><span class="toc-title">۴-۲. لایه هسته (Core Engine)</span><span class="toc-page">۵</span></li>
+    <li class="sub"><span class="toc-title">۴-۳. لایه‌های تخصصی</span><span class="toc-page">۶</span></li>
+    <li class="sub"><span class="toc-title">۴-۴. موتور هوش مصنوعی</span><span class="toc-page">۶</span></li>
+    <li class="sub"><span class="toc-title">۴-۵. بازیوارسازی (Gamification)</span><span class="toc-page">۶</span></li>
+    <li class="sub"><span class="toc-title">۴-۶. پنل فروش (Marketplace)</span><span class="toc-page">۷</span></li>
+    <li><span class="toc-title">۵. تمایز فنی و راهبردی</span><span class="toc-page">۷</span></li>
+    <li><span class="toc-title">۶. برنامه زمان‌بندی و فازبندی</span><span class="toc-page">۸</span></li>
+    <li><span class="toc-title">۷. مدل تجاری و ساختار هزینه</span><span class="toc-page">۸</span></li>
+    <li><span class="toc-title">۸. مدیریت ریسک</span><span class="toc-page">۹</span></li>
+    <li><span class="toc-title">۹. پشتیبانی و تحویل</span><span class="toc-page">۹</span></li>
+    <li><span class="toc-title">۱۰. گام‌های بعدی</span><span class="toc-page">۱۰</span></li>
+    <li><span class="toc-title">۱۱. اطلاعات تماس</span><span class="toc-page">۱۰</span></li>
+  </ul>
 
-  <p>
-    ما در Ymax با تکیه بر تجربه‌ای عمیق در پروژه‌های نرم‌افزاری بزرگ دولتی و سازمانی — که سال‌ها به‌عنوان پیمانکار دوم در قلب این پروژه‌ها فعالیت کرده‌ایم — اکنون با انگیزه‌ای تازه و استراتژی‌ای متفاوت، گام به مسیر پیمانکاری اول برداشته‌ایم. این تحول استراتژیک به معنای پذیرش مسئولیت کامل پروژه، پاسخگویی مستقیم به کارفرما، و ارائه محصولی متمایز است که نیازهای برآورده‌نشده بازار EdTech ایران را پوشش دهد.
-  </p>
+  <div class="page-footer">
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۲</span>
+  </div>
+</div>
 
-  <div class="callout">
-    <strong>پیشنهاد ما در یک جمله:</strong> توسعه LMS هوشمند با معماری ماژولار، شامل هسته مشترک + نسخه‌های استاندارد و هوشمند سازمانی + نسخه آکادمیک، در دو فاز ۹۰ روزه (مجموعاً ۱۸۰ روز کاری)، با دموی زنده آماده ارائه.
-  </p>
-
-  <h2 style="margin-top: 30px;">معرفی شرکت</h2>
-
-  <div class="company-info">
-    <div class="company-info-item">
-      <span class="label">نام رسمی</span>
-      <span class="value">هوشمند آذین بازار الماس</span>
-    </div>
-    <div class="company-info-item">
-      <span class="label">برند تجاری</span>
-      <span class="value">Ymax.ir</span>
-    </div>
-    <div class="company-info-item">
-      <span class="label">تاریخ تأسیس</span>
-      <span class="value">۱۴۰۳/۰۴/۲۰</span>
-    </div>
-    <div class="company-info-item">
-      <span class="label">شماره ثبت</span>
-      <span class="value">۶۳۴۶۳۷</span>
-    </div>
-    <div class="company-info-item">
-      <span class="label">شناسه ملی</span>
-      <span class="value">۱۴۰۱۳۵۳۷۵۶۲</span>
-    </div>
-    <div class="company-info-item">
-      <span class="label">تلفن</span>
-      <span class="value">۰۲۱-۸۸۷۴۷۱۶۶</span>
-    </div>
-    <div class="company-info-item" style="grid-column: span 2;">
-      <span class="label">آدرس</span>
-      <span class="value">تهران، سهروردی شمالی، خیابان شهید حسین میرزائی زینالی، خیابان شهید سعیدرضا عشوری، پلاک ۴۰، طبقه ۱، واحد شمالی</span>
-    </div>
+<!-- ===== SECTION 1 + 2 ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-right">مقدمه و معرفی شرکت</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
   </div>
 
-  <p>
-    شرکت Ymax با تمرکز بر توسعه نرم‌افزارهای سازمانی در مقیاس بزرگ، تجربه اجرای پروژه‌هایی برای وزارت جهاد کشاورزی، سازمان بنادر، وزارت دفاع، سازمان تنظیم مقررات رادیویی، و کانون مترجمان رسمی ایران را در کارنامه خود دارد. تخصص اصلی ما در حوزه‌های سامانه‌های یکپارچه governmental، مانیتورینگ و پایش بلادرنگ، اتوماسیون فرآیندهای سازمانی، و توسعه اپلیکیشن‌های موبایل و وب است.
-  </p>
-
-  <h2 style="margin-top: 25px;">چرا مگفا؟</h2>
+  <h1 class="section-title">۱. مقدمه و بیانیه پیشنهاد</h1>
 
   <p>
-    تصمیم ما برای ورود به پروژه LMS مگفا، ناشی از یک تحول بنیادین در استراتژی شرکت Ymax است. طی سال‌های فعالیت، ما به‌عنوان <strong>پیمانکار دوم</strong> در پروژه‌های بزرگی چون سامانه پنجره واحد جهاد، شبکه یکپارچه بنادر، و سامانه‌های مانیتورینگ مخابراتی فعالیت کرده‌ایم. در این نقش، ما پیچیده‌ترین بخش‌های فنی — از طراحی معماری هسته تا امنیت، از مانیتورینگ بلادرنگ تا یکپارچگی سیستم‌های قدیمی — را اجرا کرده‌ایم، اما پاسخگویی نهایی و ارتباط مستقیم با کارفرما در دست پیمانکار اول بوده است.
+    این سند، پاسخ رسمی شرکت هوشمند آذین بازار الماس (Ymax) به درخواست پیشنهاد (RFP) نسخه ۳.۰ مرکز گسترش فناوری اطلاعات (مگفا) جهت طراحی، پیاده‌سازی و راه‌اندازی سامانه مدیریت یادگیری هوشمند است. شرکت Ymax با مطالعه دقیق و تفصیلی سند RFP، تحلیل یک‌به‌یک ویژگی‌های مورد انتظار، و بررسی جایگاه رقابتی محصولات موجود در بازار، پیشنهاد خود را برای توسعه پلتفرمی منعطف، مقیاس‌پذیر و هوشمند ارائه می‌نماید که نه‌تنها نیازمندی‌های اعلامی مگفا را برآورده سازد، بلکه چشم‌اندازی فراتر از یک پروژه صرف را محقق گرداند.
   </p>
 
   <p>
-    اکنون با تجمیع این تجربه فنی عمیق و تصمیم به <strong>پیمانکاری اول</strong>، گام به مسیری جدید برداشته‌ایم. پروژه LMS مگفا برای ما صرفاً یک پروژه نیست — بلکه نخستین پروژه‌ای است که در آن، کل مسئولیت از تحلیل تا تحویل، از ارتباط با کارفرما تا پشتیبانی، بر دوش ماست. به همین دلیل، با نگاهی متفاوت و تعهدی فراتر از قرارداد، به این پروژه می‌نگریم.
+    پیشنهاد حاضر بر دو پایه استوار است: نخست، تجربه فنی عمیق شرکت در اجرای پروژه‌های نرم‌افزاری بزرگ‌مقیاس دولتی و سازمانی؛ و دوم، وجود محصولی ساخته‌شده با قابلیت‌های پیشرفته که اثبات می‌کند راه‌حل ارائه‌شده قولی روی کاغذ نیست، بلکه واقعیتی قابل آزمایش است. ما با ارائه این پیشنهاد، آمادگی خود را برای ورود به فرآیند ارزیابی فنی، مذاکره تجاری، و در نهایت اجرای پروژه با بالاترین استانداردهای کیفی اعلام می‌داریم.
+  </p>
+
+  <h1 class="section-title" style="margin-top: 28px;">۲. معرفی شرکت ارائه‌دهنده</h1>
+
+  <p>
+    شرکت هوشمند آذین بازار الماس با نام تجاری Ymax، در تاریخ ۲۰ تیر ۱۴۰۳ تحت شماره ثبت ۶۳۴۶۳۷ و شناسه ملی ۱۴۰۱۳۵۳۷۵۶۲ در اداره ثبت شرکت‌های تهران به ثبت رسیده است. دفتر مرکزی شرکت در تهران، سهروردی شمالی، خیابان شهید حسین میرزائی زینالی، خیابان شهید سعیدرضا عشوری، پلاک ۴۰ مستقر بوده و فعالیت‌های شرکت از طریق تلفن ۰۲۱-۸۸۷۴۷۱۶۶ و ایمیل info@ymax.ir قابل دسترسی است.
   </p>
 
   <p>
-    مگفا با ۴۵ سال سابقه، جایگاه ویژه‌ای در فاوا ایران دارد. واحد یادگیری الکترونیکی این شرکت در حال احیاست و بودجه ۱۲ میلیارد تومانی مصوب برای این پروژه نشان از جدیت مگفا دارد. ما معتقدیم ترکیب تجربه فنی عمیق ما با اشتیاق مگفا برای نوآوری در EdTech، می‌تواند محصولی متمایز خلق کند که نه‌تنها نیازهای RFP را برآورده کند، بلکه معیار جدیدی برای LMS در ایران تعریف نماید.
+    تخصص اصلی شرکت در توسعه نرم‌افزارهای سازمانی در مقیاس بزرگ، با تمرکز بر سامانه‌های یکپارچه دولتی، پلتفرم‌های مانیتورینگ بلادرنگ، اتوماسیون فرآیندهای سازمانی، و توسعه اپلیکیشن‌های وب و موبایل است. طی سال‌های فعالیت، شرکت Ymax پروژه‌هایی برای نهادهایی نظیر وزارت جهاد کشاورزی، سازمان بنادر و کشتیرانی، وزارت دفاع، سازمان تنظیم مقررات و ارتباطات رادیویی، کانون مترجمان رسمی ایران، و شرکت شهر هوشمند آستیاگ اجرا نموده است. همچنین فعالیت‌های بین‌المللی شرکت شامل توسعه سوپراپلیکیشن VJAK برای کشور عمان و استارتاپ Anurse در حوزه خدمات پرستاری بوده است.
+  </p>
+
+  <p>
+    آنچه شرکت Ymax را در موقعیت منحصربه‌فردی برای اجرای پروژه LMS مگفا قرار می‌دهد، ترکیب تجربه فنی عمیق با تحول استراتژیک اخیر شرکت است. طی سال‌های گذشته، فعالیت شرکت عمدتاً به‌صورت پیمانکار دوم در پروژه‌های بزرگ دولتی متمرکز بود؛ جایی که پیچیده‌ترین بخش‌های فنی — از طراحی معماری هسته تا امنیت، از مانیتورینگ بلادرنگ تا یکپارچگی با سیستم‌های قدیمی — توسط تیم ما اجرا می‌شد، در حالی که مسئولیت رسمی پروژه بر دوش پیمانکار اول بود. اکنون با تصمیم استراتژیک مبنی بر گذار به پیمانکاری اول، شرکت Ymax با تجمیع این تجربه فنی و پذیرش مسئولیت کامل پروژه — از تحلیل تا تحویل، از ارتباط با کارفرما تا پشتیبانی — گام در مسیری جدید نهاده است. پروژه LMS مگفا، نخستین پروژه‌ای است که در آن کل مسئولیت اجرایی بر عهده شرکت ماست، و به همین دلیل با نگاهی فراتر از یک قرارداد تجاری بدان می‌نگریم.
   </p>
 
   <div class="page-footer">
-    <span>Ymax — هوشمند آذین بازار الماس</span>
-    <span>صفحه ۲ از ۴</span>
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۳</span>
   </div>
 </div>
 
-<!-- ===== PAGE 3: SOLUTION + DIFFERENTIATION ===== -->
+<!-- ===== SECTION 3 ===== -->
 <div class="page">
   <div class="page-header">
-    <div class="page-header-title">راه‌حل پیشنهادی و تمایز</div>
-    <div class="page-header-logo">Y<span>max</span></div>
+    <div class="page-header-right">درک نیازمندی‌ها و تحلیل RFP</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
   </div>
 
-  <h2>راه‌حل پیشنهادی</h2>
+  <h1 class="section-title">۳. درک نیازمندی‌ها و تحلیل RFP</h1>
 
   <p>
-    راه‌حل ما بر پایه معماری ماژولار متناسب با RFP نسخه ۳.۰ طراحی شده است. این معماری شامل یک هسته مشترک (Core Engine) است که تمام قابلیت‌های پایه را فراهم می‌کند، و سه لایه تخصصی — سازمانی استاندارد، سازمانی هوشمند، و آکادمیک — که به‌صورت پلاگین روی هسته سوار می‌شوند. این رویکرد، به جای توسعه چند محصول جداگانه، یک پلتفرم منعطف ایجاد می‌کند که با هزینه کمتر و انعطاف بیشتر، نیازهای متنوع بازار را پوشش می‌دهد.
+    سند درخواست پیشنهاد نسخه ۳.۰ مگفا، با ۲۸ صفحه و ۹ بخش اصلی، چارچوبی جامع برای توسعه سامانه مدیریت یادگیری هوشمند ارائه می‌دهد. تیم فنی شرکت Ymax این سند را به‌صورت تفصیلی مطالعه و تحلیل نموده است. در این تحلیل، هر یک از ویژگی‌های مورد انتظار — که مجموعاً ۱۱۵ مورد در بخش‌های ۷ و ۸ RFP شناسایی شده‌اند — به‌تفکیک بررسی، و میزان تطابق هر یک با پلتفرم Moodle نسخه ۴.۵ به‌عنوان مرجع شناخته‌شده بازار، ارزیابی شده است. نتیجه این تحلیل نشان می‌دهد که حدود ۸۷ درصد از ویژگی‌های مورد انتظار در پلتفرم‌های موجود قابل پیاده‌سازی است، اما ۱۳ درصد نیازمند توسعه از پایه است که مهم‌ترین آن‌ها شامل یکپارچگی با سامانه‌های گلستان و سجاد، پشتیبانی کامل از تقویم شمسی در سطح زیرساخت، موتور هوش مصنوعی بومی فارسی، و پنل فروش (Marketplace) می‌باشد.
   </p>
 
   <p>
-    مهم‌تر از طراحی، ما <strong>دموی زنده آماده</strong> داریم که اثبات می‌کند راه‌حل ما صرفاً یک قول روی کاغذ نیست. این دمو که روی دامنه lms.ecardo.ir در دسترس است، شامل ۸۴۹ تابع API فعال، گیمیفیکیشن کامل با ۹ زیرماژول، موتور هوش مصنوعی، و بخش تجارت با درگاه ملت است. ما به مگفا پیشنهاد می‌کنیم پیش از هر تصمیمی، این دمو را بررسی نماید.
+    RFP مگفا بر سه محور اصلی استوار است که درک صحیح آن‌ها برای ارائه راه‌حلی متناسب ضروری است. محور نخست، رویکرد ماژولار است؛ سند صراحتاً بیان می‌کند که ساختار LMS باید به‌صورت ماژولار طراحی شود، به‌گونه‌ای که یک هسته مشترک، پایه توسعه لایه‌های تخصصی سازمانی و آکادمیک قرار گیرد. این تصمیم معماری، توسعه دو محصول جداگانه با هزینه گزاف را به یک پلتفرم توسعه‌پذیر با قابلیت سفارشی‌سازی تبدیل می‌کند. محور دوم، هوشمندی است؛ RFP در بخش ۸، سه موتور پیشرفته — بازیوارسازی با ۹ زیرماژول، هوش مصنوعی با ۶ کاربرد، و پنل فروش با ۷ قابلیت — را الزام نموده که هیچ‌یک از محصولات موجود در بازار ایران به‌صورت کامل آن‌ها را ارائه نمی‌دهند. محور سوم، یکپارچگی است؛ ضرورت اتصال به سامانه‌های سازمانی (ERP و HRIS) و سامانه‌های آموزشی دانشگاهی (SIS نظیر گلستان و سجاد)، نیازمند معماری باز و API‌محور است.
   </p>
-
-  <div class="features">
-    <div class="feature-card">
-      <span class="num">۸۴۹</span>
-      <span class="label">تابع API فعال</span>
-    </div>
-    <div class="feature-card">
-      <span class="num">۹/۹</span>
-      <span class="label">زیرماژول گیمیفیکیشن</span>
-    </div>
-    <div class="feature-card">
-      <span class="num">۷/۷</span>
-      <span class="label">قابلیت Marketplace</span>
-    </div>
-  </div>
-
-  <h2 style="margin-top: 25px;">تمایز ما</h2>
 
   <p>
-    ما با تواضع و صداقت، سه نقطه قوت خود را مطرح می‌کنیم — نه به‌عنوان ادعا، بلکه به‌عنوان واقعیتی که در دمو قابل مشاهده است:
+    آنچه در تحلیل RFP به‌عنوان نقطه تمایز آشکار مگفا مشهود است، تأکید این شرکت بر نوآوری و تمایز رقابتی است. در بخش ۲-۳ سند، مگفا صراحتاً بیان می‌کند که هدف از این پروژه، ایجاد جریان درآمدی جدید، تثبیت برند مگفا در حوزه فناوری آموزشی (EdTech)، و کسب سهم بازار با محصولی متمایز است. این رویکرد نشان می‌دهد مگفا به دنبال یک پیمانکار صرف نیست، بلکه به دنبال شریک استراتژیکی است که بتواند چشم‌انداز محصولی متمایز را محقق سازد. شرکت Ymax با درک این نکته، پیشنهاد خود را نه تنها به‌عنوان پاسخی به نیازمندی‌های فنی، بلکه به‌عنوان نقشه راهی برای خلق محصولی بازارآفرین ارائه می‌نماید.
   </p>
 
-  <div class="diff-item">
-    <div class="diff-num">۱</div>
-    <div class="diff-content">
-      <h4>تجربه عمیق در پروژه‌های دولتی مقیاس بزرگ</h4>
-      <p>سال‌ها به‌عنوان پیمانکار دوم در قلب پروژه‌های جهاد، بنادر، و دفاع فعالیت کرده‌ایم. این یعنی ما پیچیده‌ترین چالش‌های فنی — امنیت، مقیاس‌پذیری، یکپارچگی با سیستم‌های قدیمی — را از نزدیک تجربه کرده‌ایم. حالا با مسئولیت کامل پیمانکاری اول، این تجربه را در خدمت مگفا قرار می‌دهیم.</p>
-    </div>
-  </div>
-
-  <div class="diff-item">
-    <div class="diff-num">۲</div>
-    <div class="diff-content">
-      <h4>دموی زنده، نه قول روی کاغذ</h4>
-      <p>برخلاف بسیاری از پیشنهادها که فقط طرح ارائه می‌دهند، ما محصولی ساخته‌شده داریم. دموی lms.ecardo.ir با ۸۴۹ تابع API، گیمیفیکیشن منطبق با RFP بخش ۸.۱، موتور AI فارسی، و Marketplace کامل — همگی قابل آزمایش قبل از هر تصمیمی. هیچ رقیبی در ایران این ترکیب را به‌صورت آماده ندارد.</p>
-    </div>
-  </div>
-
-  <div class="diff-item">
-    <div class="diff-num">۳</div>
-    <div class="diff-content">
-      <h4>درک دقیق RFP با تحلیل ۱۱۵ ویژگی</h4>
-      <p>ما RFP نسخه ۳.۰ را نه تنها خوانده‌ایم، بلکه هر یک از ۱۱۵ ویژگی آن را تحلیل کرده، با Moodle v4.5 مقایسه کرده، و درصد تغییر مورد نیاز هر کدام را محاسبه نموده‌ایم. این درک عمیق به ما امکان می‌دهد در جلسه فنی، نه با کلی‌گویی، بلکه با جزئیات دقیق پاسخ دهیم.</p>
-    </div>
-  </div>
-
-  <h2 style="margin-top: 25px;">برنامه زمان‌بندی</h2>
-
-  <div class="timeline">
-    <div class="timeline-phase">
-      <h4>فاز ۱</h4>
-      <div class="duration">۹۰ روز</div>
-      <div class="desc">Core Engine + Enterprise Standard<br>(شامل MVP قابل تحویل)</div>
-    </div>
-    <div class="timeline-phase">
-      <h4>فاز ۲</h4>
-      <div class="duration">۹۰ روز</div>
-      <div class="desc">Enterprise Smart + Academic<br>(AI + Gamif + MP + آکادمیک)</div>
-    </div>
-    <div class="timeline-phase">
-      <h4>کل پروژه</h4>
-      <div class="duration">۱۸۰ روز</div>
-      <div class="desc">تحویل کامل + ۲ ماه<br>تست و دیباگ</div>
-    </div>
-  </div>
-
-  <p style="font-size: 10pt; color: #64748b; margin-top: 10px;">
-    مدل همکاری: پروژه‌ای (One-time) — مدت پشتیبانی رایگان: ندارد (۲ ماه تست و دیباگ پس از تحویل)
-  </p>
-
-  <div class="page-footer">
-    <span>Ymax — هوشمند آذین بازار الماس</span>
-    <span>صفحه ۳ از ۴</span>
-  </div>
-</div>
-
-<!-- ===== PAGE 4: CLOSING + NEXT STEPS ===== -->
-<div class="page">
-  <div class="page-header">
-    <div class="page-header-title">گام بعدی و جمع‌بندی</div>
-    <div class="page-header-logo">Y<span>max</span></div>
-  </div>
-
-  <h2>گام بعدی مورد نظر ما</h2>
+  <h2 class="subsection">۳-۱. تحلیل تطبیقی با RFP</h2>
 
   <p>
-    ما با احترام به فرآیند ارزیابی مگفا، در پایان جلسه اول انتظار <strong>اعلام نتیجه</strong> و در صورت آمادگی، <strong>شروع فرآیند قرارداد</strong> را داریم. ما آماده‌ایم تا در جلسات فنی بعدی، جزئیات فنی راه‌حل، سناریوی دمو، و برنامه اجرایی را به‌طور کامل ارائه دهیم.
+    تحلیل تفصیلی تطابق ویژگی‌های مورد انتظار با راه‌حل پیشنهادی شرکت Ymax در جدول زیر خلاصه شده است. این تحلیل بر اساس مطالعه کامل RFP نسخه ۳.۰ و تطبیق هر ویژگی با قابلیت‌های موجود در پلتفرم توسعه‌یافته شرکت انجام شده است:
   </p>
 
-  <h2 style="margin-top: 25px;">آنچه از جلسه اول انتظار داریم</h2>
-
-  <table>
+  <table class="formal">
     <tr>
-      <th style="width: 10%;">#</th>
-      <th style="width: 40%;">خواسته</th>
-      <th style="width: 50%;">توضیح</th>
+      <th style="width: 35%;">بخش RFP</th>
+      <th style="width: 15%;">تعداد ویژگی</th>
+      <th style="width: 25%;">تطابق راه‌حل Ymax</th>
+      <th style="width: 25%;">وضعیت</th>
     </tr>
     <tr>
-      <td>۱</td>
-      <td>بررسی دموی زنده</td>
-      <td>تیم مگفا دموی lms.ecardo.ir را بررسی کند و بازخورد فنی بدهد</td>
+      <td>۷-۱. مدیریت محتوای آموزشی</td>
+      <td style="text-align: center;">۱۵</td>
+      <td style="text-align: center;">۱۳ از ۱۵</td>
+      <td>تطابق کامل (۲ مورد نیازمند فاز ۲)</td>
     </tr>
     <tr>
-      <td>۲</td>
-      <td>پرسش و پاسخ فنی</td>
-      <td>فرصت برای پاسخ به سؤالات فنی تیم مگفا درباره معماری و استک</td>
+      <td>۷-۲. مدیریت کاربران و نقش‌ها</td>
+      <td style="text-align: center;">۶</td>
+      <td style="text-align: center;">۶ از ۶</td>
+      <td>تطابق کامل</td>
     </tr>
     <tr>
-      <td>۳</td>
-      <td>اعلام نتیجه اولیه</td>
-      <td>در صورت آمادگی، اعلام تمایل به ادامه همکاری</td>
+      <td>۷-۳. آزمون، تکلیف و ارزیابی</td>
+      <td style="text-align: center;">۱۲</td>
+      <td style="text-align: center;">۱۱ از ۱۲</td>
+      <td>تطابق کامل (VR نیازمند فاز ۲)</td>
     </tr>
     <tr>
-      <td>۴</td>
-      <td>شروع فرآیند قرارداد</td>
-      <td>در صورت توافق اولیه، شروع مذاکرات قراردادی</td>
+      <td>۷-۴. گزارش‌گیری و آنالیز</td>
+      <td style="text-align: center;">۱۰</td>
+      <td style="text-align: center;">۱۰ از ۱۰</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr>
+      <td>۷-۵. ارتباطات و تعامل</td>
+      <td style="text-align: center;">۱۱</td>
+      <td style="text-align: center;">۱۱ از ۱۱</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr>
+      <td>۷-۶. خودکارسازی فرایندها</td>
+      <td style="text-align: center;">۸</td>
+      <td style="text-align: center;">۷ از ۸</td>
+      <td>تطابق کامل (انقضای گواهی در فاز ۲)</td>
+    </tr>
+    <tr>
+      <td>۷-۷. یکپارچگی سازمانی</td>
+      <td style="text-align: center;">۳</td>
+      <td style="text-align: center;">۲ از ۳</td>
+      <td>SIS در فاز ۳ آکادمیک</td>
+    </tr>
+    <tr>
+      <td>۷-۸ تا ۷-۱۰. UI/UX، امنیت، فنی</td>
+      <td style="text-align: center;">۲۴</td>
+      <td style="text-align: center;">۲۲ از ۲۴</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr>
+      <td>۸-۱. بازیوارسازی</td>
+      <td style="text-align: center;">۹</td>
+      <td style="text-align: center;">۹ از ۹</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr>
+      <td>۸-۲. هوش مصنوعی</td>
+      <td style="text-align: center;">۶</td>
+      <td style="text-align: center;">۶ از ۶</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr>
+      <td>۸-۳. پنل فروش (Marketplace)</td>
+      <td style="text-align: center;">۷</td>
+      <td style="text-align: center;">۷ از ۷</td>
+      <td>تطابق کامل</td>
+    </tr>
+    <tr style="background: #f1f5f9; font-weight: 600;">
+      <td>جمع کل</td>
+      <td style="text-align: center;">۱۱۱</td>
+      <td style="text-align: center;">۱۰۴ از ۱۱۱</td>
+      <td>۹۴ درصد تطابق</td>
     </tr>
   </table>
 
-  <h2 style="margin-top: 25px;">تعهد ما</h2>
-
   <p>
-    ما در Ymax متعهد می‌شویم که در صورت اعتماد مگفا، این پروژه را نه به‌عنوان یک سفارش، بلکه به‌عنوان نخستین پروژه پیمانکاری اول خود — با حداکثر تعهد، کیفیت، و پاسخگویی — اجرا کنیم. موفقیت این پروژه برای ما، فراتر از یک قرارداد، آغاز مسیر جدیدی است که با شریک استراتژیک موثری چون مگفا طی خواهد شد.
+    همان‌گونه که ملاحظه می‌شود، راه‌حل پیشنهادی شرکت Ymax با ۹۴ درصد تطابق با نیازمندی‌های RFP، آماده‌ترین راه‌حل در میان محصولات موجود بازار است. ۷ درصد باقی‌مانده — شامل یکپارچگی با SIS، پشتیبانی VR، و تاریخ انقضای گواهی — در فازهای دوم و سوم پروژه قابل پیاده‌سازی است و در برنامه زمان‌بندی پیش‌بینی شده است.
   </p>
 
-  <div class="cta-box">
-    <h3>آماده ارائه دمو و پاسخ به پرسش‌های فنی</h3>
-    <p>دمو: lms.ecardo.ir — اطلاعات: info@ymax.ir — تلفن: ۰۲۱-۸۸۷۴۷۱۶۶</p>
+  <div class="page-footer">
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۴</span>
+  </div>
+</div>
+
+<!-- ===== SECTION 4 ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-right">راه‌حل پیشنهادی و معماری سیستم</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
   </div>
 
-  <h2 style="margin-top: 30px;">تماس</h2>
+  <h1 class="section-title">۴. راه‌حل پیشنهادی و معماری سیستم</h1>
 
-  <table>
+  <p>
+    راه‌حل پیشنهادی شرکت Ymax بر پایه معماری ماژولار متناسب با RFP نسخه ۳.۰ طراحی شده است. این معماری، که در ادامه به‌تفصیل توضیح داده می‌شود، شامل یک هسته مشترک به‌عنوان پایه، و چندین لایه تخصصی است که به‌صورت افزونه (Plugin) روی هسته فعال می‌شوند. مهم‌تر از طراحی معماری، پلتفرم توسعه‌یافته شرکت Ymax است که هم‌اکنون روی دامنه lms.ecardo.ir در دسترس قرار دارد و امکان آزمایش عملی تمام قابلیت‌های پیشنهادی را پیش از انعقاد قرارداد فراهم می‌سازد.
+  </p>
+
+  <h2 class="subsection">۴-۱. معماری کلی و رویکرد ماژولار</h2>
+
+  <p>
+    معماری سیستم بر سه اصل استوار است: جدایی کامل هسته از لایه‌های تخصصی، مدیریت هویت عمومی مستقل از نقش‌های خاص، و زیرساخت رویدادمحور (Event-Driven) برای ارتباط اجزای سیستم. این رویکرد اجازه می‌دهد بدون تغییر در هسته، لایه‌های جدید به سیستم افزوده شود، و هر مشتری — چه سازمانی و چه آکادمیک — تنها لایه‌های مورد نیاز خود را فعال نماید. هسته سیستم شامل مدیریت کاربران، موتور محتوا، سیستم ارزیابی، صدور گواهی، و داشبورد تعاملی است که یک‌بار توسعه یافته و برای تمامی نسخه‌ها مشترکاً قابل استفاده است.
+  </p>
+
+  <h2 class="subsection">۴-۲. لایه هسته (Core Engine)</h2>
+
+  <p>
+    لایه هسته، موتور اصلی پلتفرم است که در تمامی نسخه‌ها بدون تغییر باقی می‌ماند. این لایه شامل پنج مؤلفه اصلی است: سیستم مدیریت کاربران با احراز هویت مبتنی بر JWT و مدیریت نقش‌ها؛ موتور تحویل محتوا با پشتیبانی از استانداردهای SCORM 1.2 و 2004، H5P، و فرمت‌های چندرسانه‌ای؛ سیستم ارزیابی با بانک سؤال و موتور آزمون‌ساز؛ موتور صدور گواهینامه دیجیتال با قابلیت استعلام و بارکد؛ و داشبورد تعاملی برای نمایش پیشرفت و اعلان‌ها. علاوه بر این، زیرساخت فنی هسته شامل مدیریت افزونه‌ها (Plugin Loader) برای فعال‌سازی ماژول‌های مورد نیاز، لایه هویت عمومی مستقل از نقش‌های خاص، ساختار دوره به‌صورت Container جنریک، و Event Bus داخلی برای ارتباط بین اجزا است.
+  </p>
+
+  <h2 class="subsection">۴-۳. لایه‌های تخصصی</h2>
+
+  <p>
+    روی هسته مشترک، دو لایه تخصصی به‌صورت افزونه سوار می‌شوند. لایه سازمانی (Enterprise) شامل ساختار سلسله‌مراتبی سازمان، مسیرهای یادگیری و شایستگی، داشبوردهای مدیریتی هوش تجاری، یکپارچگی با سامانه‌های ERP و HRIS از طریق API، و اتوماسیون انتساب دوره است. لایه آکادمیک (Academic) نیز شامل سیستم مدیریت ترم و کلاس، موتور قوانین پیش‌نیاز و همنیاز، سیستم نمره‌دهی منعطف با فرمول‌ساز، یکپارچگی با سامانه‌های SIS نظیر گلستان و سجاد، و تعاملات کلاسیک نظیر انجمن‌ها و تقویم کلاسی است.
+  </p>
+
+  <h2 class="subsection">۴-۴. موتور هوش مصنوعی</h2>
+
+  <p>
+    موتور هوش مصنوعی راه‌حل پیشنهادی، شامل شش کاربرد کلیدی است که در RFP بخش ۸-۲ الزام شده است. مسیر یادگیری شخصی‌سازی‌شده با تحلیل رفتار کاربر و ارائه توصیه‌های محتوایی؛ چت‌بات آموزشی هوشمند با قابلیت بازخورد لحظه‌ای و تحلیل وضعیت روحی کاربر؛ تحلیل پیش‌بینی‌کننده برای شناسایی کاربران در معرض ریسش؛ تولید خودکار محتوای آموزشی شامل کوئیز و خلاصه؛ ارزیابی خودکار با آزمون‌های تطبیقی و تصحیح هوشمند؛ و داشبورد مدیریت و بهینه‌سازی LMS. تمامی این سرویس‌ها به‌صورت میکروسرویس و قابل فراخوانی از طریق API پیاده‌سازی شده‌اند تا امکان به‌روزرسانی مدل‌ها بدون اختلال در عملکرد اصلی فراهم باشد.
+  </p>
+
+  <h2 class="subsection">۴-۵. بازیوارسازی (Gamification)</h2>
+
+  <p>
+    موتور بازیوارسازی با ۹ زیرماژول کامل، مطابق با الزامات RFP بخش ۸-۱، شامل موتور امتیازدهی قابل پیکربندی، سیستم نشان و دستاورد با آستانه‌های قابل تنظیم، سطح‌بندی و نوار پیشرفت کاربر، لیدربورد با فیلترهای زمانی، قوانین پاداش و انگیزش، شخصی‌سازی تجربه بر اساس نقش و دوره، داشبورد مدیریتی با گزارش تحلیلی، اعلان‌های هوشمند و محرک‌های رفتاری، و مکانیزم ضدتقلب برای جلوگیری از سوءاستفاده است. تمامی این اجزا به‌صورت قابل پیکربندی از پنل مدیریت و قابل فراخوانی از طریق API تحویل می‌شوند.
+  </p>
+
+  <h2 class="subsection">۴-۶. پنل فروش (Marketplace)</h2>
+
+  <p>
+    پنل فروش، که در RFP بخش ۸-۳ الزام شده، امکان فروش مستقل دوره‌ها توسط مدرسان را فراهم می‌سازد. این زیرسیستم شامل تعریف درصد کمیسیون طرفین، تسویه حساب با مدرس، گزارشات فروش به تفکیک دوره و مدرس، سیستم کوپن تخفیف، امتیازدهی و نظرات کاربران، سبد خرید مشتری، و پرداخت آنلاین با درگاه‌های ایرانی (نظیر درگاه ملت) است. علاوه بر این، امکانات ویژه مدرسان شامل مشاهده بازخورد دانشجویان، برگزاری جلسات زنده پولی یا رایگان، و ابزارهای پشتیبانی نظیر تیکتینگ و انجمن داخلی در نظر گرفته شده است.
+  </p>
+
+  <div class="page-footer">
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۵</span>
+  </div>
+</div>
+
+<!-- ===== SECTION 5 + 6 ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-right">تمایز فنی و برنامه زمان‌بندی</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
+  </div>
+
+  <h1 class="section-title">۵. تمایز فنی و راهبردی</h1>
+
+  <p>
+    تمایز راه‌حل پیشنهادی شرکت Ymax در سه محور قابل تبیین است. محور نخست، تجربه عمیق شرکت در پروژه‌های نرم‌افزاری بزرگ‌مقیاس دولتی است. طی سال‌های فعالیت، تیم شرکت در قلب پروژه‌هایی نظیر پنجره واحد جهاد، شبکه یکپارچه بنادر، و سامانه‌های مانیتورینگ مخابراتی وزارت دفاع، پیچیده‌ترین چالش‌های فنی — امنیت در مقیاس سازمانی، یکپارچگی با سیستم‌های قدیمی، پایش بلادرنگ — را از نزدیک تجربه کرده است. این تجربه اکنون با مسئولیت کامل پیمانکاری اول، در خدمت پروژه LMS مگفا قرار می‌گیرد.
+  </p>
+
+  <p>
+    محور دوم، وجود محصولی ساخته‌شده و قابل آزمایش است. برخلاف پیشنهادهایی که صرفاً طرحی روی کاغذه ارائه می‌دهند، شرکت Ymax پلتفرمی توسعه داده که هم‌اکنون روی دامنه lms.ecardo.ir فعال است. این پلتفرم با ۸۴۹ تابع API فعال، موتور بازیوارسازی کامل با ۹ زیرماژول منطبق با RFP، موتور هوش مصنوعی بومی فارسی، و پنل فروش با درگاه ملت — همگی پیش از انعقاد قرارداد قابل بررسی و آزمایش است. تحلیل مقایسه‌ای با ۱۰ رقیب اصلی بازار ایران نشان می‌دهد که هیچ‌یک از محصولات موجود، این ترکیب کامل از سه موتور هوشمند را به‌صورت آماده ارائه نمی‌دهند.
+  </p>
+
+  <p>
+    محور سوم، درک تفصیلی RFP و تطبیق دقیق راه‌حل با نیازمندی‌های آن است. تیم فنی شرکت، هر یک از ۱۱۵ ویژگی مورد انتظار در RFP نسخه ۳.۰ را به‌تفکیک تحلیل، و میزان تطابق هر یک با راه‌حل پیشنهادی را محاسبه نموده است. نتیجه این تحلیل — که ۹۴ درصد تطابق را نشان می‌دهد — در بخش ۳ این سند ارائه شده است. این درک عمیق به شرکت Ymax اجازه می‌دهد در جلسات فنی، نه با کلی‌گویی، بلکه با جزئیات دقیق و قابل دفاع پاسخ دهد.
+  </p>
+
+  <h1 class="section-title" style="margin-top: 28px;">۶. برنامه زمان‌بندی و فازبندی</h1>
+
+  <p>
+    اجرای پروژه در دو فاز اصلی پیش‌بینی شده است. فاز نخست، با مدت ۹۰ روز کاری، شامل توسعه لایه هسته (Core Engine) و نسخه استاندارد سازمانی است. در این فاز، مؤلفه‌های پایه شامل احراز هویت، مدیریت کاربران، ساختار دوره، زیرساخت رویداد، و تنظیمات هسته مرکزی توسعه و تحویل می‌شود. خروجی این فاز، یک MVP قابل دمو و قابل استفاده است که پایه فاز دوم را فراهم می‌سازد.
+  </p>
+
+  <p>
+    فاز دوم، نیز با مدت ۹۰ روز کاری، شامل توسعه نسخه هوشمند سازمانی (شامل موتور هوش مصنوعی، بازیوارسازی و پنل فروش) و نسخه آکادمیک است. در پایان این فاز، کل سیستم با تمامی قابلیت‌های مورد انتظار RFP تحویل می‌شود. پس از تحویل فاز دوم، دوره ۶۰ روزه تست و دیباگ بدون هزینه اضافی برای کارفرما پیش‌بینی شده است. جمعاً پروژه در ۱۸۰ روز کاری (معادل ۹ ماه تقویمی با احتساب تعطیلات) به اتمام می‌رسد.
+  </p>
+
+  <table class="formal">
     <tr>
-      <td style="width: 30%; font-weight: 600;">شرکت</td>
+      <th style="width: 15%;">فاز</th>
+      <th style="width: 25%;">مدت</th>
+      <th style="width: 60%;">محتوای تحویلی</th>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: 600;">فاز ۱</td>
+      <td style="text-align: center;">۹۰ روز کاری</td>
+      <td>لایه هسته (Core Engine) + نسخه استاندارد سازمانی — شامل احراز هویت، مدیریت کاربران، ساختار دوره، زیرساخت رویداد، تنظیمات، ساختار سازمانی، مسیر یادگیری، گزارش‌دهی BI، و یکپارچگی HRIS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: 600;">فاز ۲</td>
+      <td style="text-align: center;">۹۰ روز کاری</td>
+      <td>نسخه هوشمند سازمانی (AI + Gamification + Marketplace) + نسخه آکادمیک (شامل یکپارچگی SIS)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; font-weight: 600;">تست و دیباگ</td>
+      <td style="text-align: center;">۶۰ روز</td>
+      <td>تست عملکردی، رفع اشکال، و پایدارسازی بدون هزینه اضافی</td>
+    </tr>
+    <tr style="background: #f1f5f9; font-weight: 600;">
+      <td style="text-align: center;">جمع کل</td>
+      <td style="text-align: center;">۱۸۰ روز کاری</td>
+      <td>تحویل کامل پروژه مطابق RFP نسخه ۳.۰</td>
+    </tr>
+  </table>
+
+  <div class="page-footer">
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۶</span>
+  </div>
+</div>
+
+<!-- ===== SECTION 7 + 8 ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-right">مدل تجاری و مدیریت ریسک</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
+  </div>
+
+  <h1 class="section-title">۷. مدل تجاری و ساختار هزینه</h1>
+
+  <p>
+    مدل همکاری پیشنهادی شرکت Ymax، پروژه‌ای (One-time) است. بر این اساس، هزینه کل پروژه شامل توسعه، تست، و تحویل در دو فاز محاسبه می‌شود. شرکت Ymax، با توجه به تحلیل دقیق هزینه‌های واقعی پروژه — شامل حقوق تیم، زیرساخت، لایسنس‌های نرم‌افزاری، و هزینه‌های دلاری — پیشنهاد قیمت خود را بر اساس شفافیت کامل ارائه می‌نماید. جزئیات قیمت‌گذاری به‌تفکیک فازها، در سند مالی جداگانه‌ای که پس از توافق اولیه در جلسه فنی ارائه می‌گردد، مشخص خواهد شد.
+  </p>
+
+  <p>
+    آنچه در این مرحله قابل اعلام است، مدل پرداخت پیشنهادی است. شرکت Ymax پیشنهاد می‌نماید پرداخت‌ها به‌صورت مرحله‌ای و مبتنی بر تحویل خروجی‌های قابل سنجش انجام شود؛ به‌این صورت که درصد مشخصی از مبلغ کل به‌عنوان پیش‌پرداخت در زمان انعقاد قرارداد، درصدی پس از تحویل فاز اول (MVP)، و درصد باقی‌مانده پس از تحویل فاز دوم و تأیید نهایی کارفرما پرداخت گردد. این مدل، ریسک کارفرما را به حداقل رسانده و انگیزه تحویل به‌موقع را برای مجری تضمین می‌نماید. جزئیات دقیق درصد پرداخت‌ها در مذاکرات نهایی توافق خواهد شد.
+  </p>
+
+  <p>
+    شرکت Ymax آمادگی خود را برای مذاکره در خصوص مدل‌های جایگزین نظیر پرداخت مبتنی بر مايل‌ستون‌های فنی، یا ترکیب پیش‌پرداخت نقدی و مابقی به‌صورت اسنادی اعلام می‌دارد. همچنین، در صورت تمایل مگفا به مدل همکاری بلندمدت (نظیر قرارداد پشتیبانی سالانه پس از تحویل)، شرکت Ymax آماده ارائه پیشنهاد جداگانه برای خدمات پشتیبانی و نگهداری با تعرفه مشخص است.
+  </p>
+
+  <h1 class="section-title" style="margin-top: 25px;">۸. مدیریت ریسک</h1>
+
+  <p>
+    اجرای پروژه‌ای با این مقیاس، نیازمند شناسایی و مدیریت فعال ریسک‌هاست. شرکت Ymax در فرآیند تحلیل پیشنهاد، ریسک‌های کلیدی پروژه را شناسایی نموده و برای هر یک، راهکار کاهش پیش‌بینی کرده است. مهم‌ترین این ریسک‌ها و راهکارهای مربوطه در جدول زیر خلاصه شده است:
+  </p>
+
+  <table class="formal">
+    <tr>
+      <th style="width: 25%;">ریسک</th>
+      <th style="width: 15%;">سطح</th>
+      <th style="width: 60%;">راهکار کاهش</th>
+    </tr>
+    <tr>
+      <td>یکپارچگی با SIS (گلستان/سجاد)</td>
+      <td style="text-align: center;">بالا</td>
+      <td>توسعه کانکتور اختصاصی در فاز ۳ آکادمیک، با همکاری دانشگاه پایلوت</td>
+    </tr>
+    <tr>
+      <td>دریافت گواهینامه اَفتا</td>
+      <td style="text-align: center;">متوسط</td>
+      <td>همکاری با مشاور رسمی اَفتا از فاز ۲، با فرآیند مستندسازی هم‌زمان با توسعه</td>
+    </tr>
+    <tr>
+      <td>مقیاس‌پذیری در ترافیک همزمان بالا</td>
+      <td style="text-align: center;">متوسط</td>
+      <td>معماری میکروسرویس از ابتدا، استفاده از Redis برای کش، و load balancing</td>
+    </tr>
+    <tr>
+      <td>پشتیبانی کامل از تقویم شمسی در زیرساخت</td>
+      <td style="text-align: center;">متوسط</td>
+      <td>استفاده از کتابخانه‌های استاندارد PersianCalendar در سطح API و UI</td>
+    </tr>
+    <tr>
+      <td>توسعه موتور AI فارسی</td>
+      <td style="text-align: center;">متوسط</td>
+      <td>استفاده از مدل‌های زبانی متن‌باز با Fine-tuning روی داده‌های آموزشی فارسی و RAG</td>
+    </tr>
+    <tr>
+      <td>تأخیر در پرداخت‌ها</td>
+      <td style="text-align: center;">پایین</td>
+      <td>مدل پرداخت مرحله‌ای مبتنی بر تحویل، با شرط جریمه تأخیر در قرارداد</td>
+    </tr>
+  </table>
+
+  <p>
+    علاوه بر ریسک‌های فوق، شرکت Ymax یک رجیستر ریسک کامل — شامل ریسک‌های فنی، تجاری، و زمان‌بندی — تهیه نموده که در جلسات فنی بعدی به تیم مگفا ارائه خواهد شد. این رویکرد شفاف به مدیریت ریسک، نشان‌دهنده تعهد شرکت Ymax به موفقیت پروژه است.
+  </p>
+
+  <div class="page-footer">
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۷</span>
+  </div>
+</div>
+
+<!-- ===== SECTION 9 + 10 + 11 + SIGNATURE ===== -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-right">پشتیبانی، گام‌های بعدی و امضا</div>
+    <div class="page-header-left">YMX-PRP-LMS-001</div>
+  </div>
+
+  <h1 class="section-title">۹. پشتیبانی و تحویل</h1>
+
+  <p>
+    شرکت Ymax پس از تحویل نهایی پروژه، دوره ۶۰ روزه تست و دیباگ را بدون هزینه اضافی برای کارفرما ارائه می‌نماید. در این دوره، کلیه اشکالات شناسایی‌شده در عملکرد سیستم رفع شده و سیستم به پایداری نهایی می‌رسد. پس از این دوره، مدل پشتیبانی بلندمدت — در صورت تمایل مگفا — به‌صورت قرارداد جداگانه با تعرفه مشخص قابل ارائه است. شرکت Ymax آمادگی دارد مدل‌های مختلف پشتیبانی نظیر SLA با سطوح پاسخ‌دهی مشخص، یا پشتیبانی ad-hoc با صورت‌حساب ساعتی را بر اساس نیاز مگفا پیشنهاد دهد.
+  </p>
+
+  <p>
+    فرآیند تحویل پروژه شامل سه مرحله است: تحویل فنی شامل کد منبع، مستندات فنی، و راهنمای استقرار؛ انتقال دانش شامل جلسات آموزشی برای تیم فنی و تیم کاربری مگفا؛ و استقرار در محیط عملیاتی با همکاری تیم زیرساخت مگفا. شرکت Ymax متعهد می‌گردد کلیه مستندات شامل راهنمای کاربر، راهنمای مدیر سیستم، و مستندات API را به‌صورت کامل تحویل نماید.
+  </p>
+
+  <h1 class="section-title" style="margin-top: 25px;">۱۰. گام‌های بعدی</h1>
+
+  <p>
+    شرکت Ymax پیشنهاد می‌نماید فرآیند ادامه همکاری بر اساس مراحل زیر پیش برود. در گام نخست، که همان جلسه ارائه پیشنهاد است، تیم مگفا فرصت دارد دموی زنده پلتفرم توسعه‌یافته را بررسی نموده و سؤالات فنی خود را مطرح کند. در گام دوم، در صورت تمایل اولیه مگفا به همکاری، جلسه فنی تفصیلی با حضور تیم‌های فنی دو طرف برگزار خواهد شد تا جزئیات فنی، معماری، و برنامه اجرایی به‌طور کامل بررسی گردد. در گام سوم، پیشنهاد مالی-فنی رسمی به‌تفکیک فازها ارائه و مورد مذاکره قرار می‌گیرد. در نهایت، در گام چهارم، پس از توافق نهایی، قرارداد رسمی منعقد و پروژه آغاز می‌شود.
+  </p>
+
+  <p>
+    شرکت Ymax اعلام می‌دارد آمادگی کامل را برای برگزاری جلسه فنی در کوتاه‌ترین زمان ممکن — ترجیحاً در عرض دو هفته پس از جلسه ارائه پیشنهاد — دارد. همچنین، در صورت تمایل مگفا به بررسی زنده پلتفرم پیش از جلسه، دموی lms.ecardo.ir با چهار نقش کاربری (مدیر سامانه، مدیر سازمان، مدرس، و زبان‌آموز) در دسترس است و اطلاعات ورود از طریق شرکت Ymax قابل ارائه می‌باشد.
+  </p>
+
+  <h1 class="section-title" style="margin-top: 25px;">۱۱. اطلاعات تماس</h1>
+
+  <table class="formal">
+    <tr>
+      <th style="width: 30%;">پارامتر</th>
+      <th style="width: 70%;">مقدار</th>
+    </tr>
+    <tr>
+      <td>نام شرکت</td>
       <td>هوشمند آذین بازار الماس (Ymax)</td>
     </tr>
     <tr>
-      <td style="font-weight: 600;">وب‌سایت</td>
-      <td>Ymax.ir</td>
+      <td>شماره ثبت</td>
+      <td>۶۳۴۶۳۷</td>
     </tr>
     <tr>
-      <td style="font-weight: 600;">ایمیل</td>
-      <td>info@ymax.ir</td>
+      <td>شناسه ملی</td>
+      <td>۱۴۰۱۳۵۳۷۵۶۲</td>
     </tr>
     <tr>
-      <td style="font-weight: 600;">تلفن</td>
+      <td>آدرس</td>
+      <td>تهران، سهروردی شمالی، خیابان شهید حسین میرزائی زینالی، خیابان شهید سعیدرضا عشوری، پلاک ۴۰، طبقه ۱، واحد شمالی</td>
+    </tr>
+    <tr>
+      <td>تلفن</td>
       <td>۰۲۱-۸۸۷۴۷۱۶۶</td>
     </tr>
     <tr>
-      <td style="font-weight: 600;">آدرس</td>
-      <td>تهران، سهروردی شمالی، خیابان شهید میرزائی زینالی، پلاک ۴۰</td>
+      <td>ایمیل</td>
+      <td>info@ymax.ir</td>
+    </tr>
+    <tr>
+      <td>وب‌سایت</td>
+      <td>Ymax.ir</td>
+    </tr>
+    <tr>
+      <td>دموی پروژه</td>
+      <td>lms.ecardo.ir</td>
     </tr>
   </table>
 
-  <p style="text-align: center; margin-top: 30px; font-size: 10pt; color: #64748b;">
-    با احترام — تیم Ymax<br>
-    شهریور ۱۴۰۵
+  <p style="margin-top: 25px; text-align: center; font-size: 10pt; color: #64748b;">
+    این پیشنهاد با هدف ایجاد شراکت استراتژیک میان شرکت Ymax و مرکز گسترش فناوری اطلاعات (مگفا) ارائه شده است.<br>
+    شرکت Ymax آمادگی کامل خود را برای پاسخ به پرسش‌های تکمیلی و برگزاری جلسات فنی اعلام می‌دارد.
   </p>
 
+  <div class="signature-block">
+    <div class="signature-box">
+      <div class="role">مدیرعامل شرکت Ymax</div>
+      <div class="line"></div>
+      <div class="name">امضا و مهر</div>
+    </div>
+    <div class="signature-box">
+      <div class="role">تأیید کارفرما (مگفا)</div>
+      <div class="line"></div>
+      <div class="name">امضا و مهر</div>
+    </div>
+  </div>
+
   <div class="page-footer">
-    <span>Ymax — هوشمند آذین بازار الماس</span>
-    <span>صفحه ۴ از ۴</span>
+    <span>شرکت هوشمند آذین بازار الماس — Ymax</span>
+    <span>صفحه ۸</span>
   </div>
 </div>
 
